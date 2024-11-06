@@ -8,21 +8,3 @@
 
 // Custom CSS
 @import 'custom';
-
-.tipsport-tv-banner img {
-  height: auto;
-}
-
-.tipsport-tv-banner.mobile {
-  display: none;
-}
-
-@media (max-width: 479px) {
-  .tipsport-tv-banner.desktop {
-    display: none;
-  }
-
-  .tipsport-tv-banner.mobile {
-    display: block;
-  }
-}

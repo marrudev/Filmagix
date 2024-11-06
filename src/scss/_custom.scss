@@ -3,6 +3,10 @@
 
 /* purgecss start ignore */
 
+body {
+  background-color: $background;
+}
+
 .divider {
   width: 100%;
   height: 1px;
@@ -10,42 +14,6 @@
 
   &.secondary {
     background-color: $primary;
-  }
-}
-
-// Pagination
-
-.pagination {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 0.25rem;
-  justify-content: center;
-  margin-top: 1rem;
-
-  a {
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border: 1px solid $accent;
-    color: $accent;
-    border-radius: 2rem;
-    border-bottom-left-radius: 0;
-
-    &:is(:hover, :focus) {
-      background-color: $accent;
-      color: $white;
-      text-decoration: none;
-    }
-  }
-
-  a.active {
-    background-color: $accent;
-    color: $white;
-    font-weight: 700;
   }
 }
 
@@ -79,6 +47,16 @@
         background-color: $accent;
       }
     }
+  }
+}
+
+//
+.social-icon {
+  transition: $transition;
+  color: $accent;
+
+  &:hover {
+    color: $white;
   }
 }
 

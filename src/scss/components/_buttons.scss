@@ -6,19 +6,21 @@
   display: inline-flex;
   justify-content: center;
   background-color: $accent;
-  color: $white;
+  color: $black;
   font-family: $ff-base;
   font-size: $fs-regular;
   font-weight: $fw-bold;
-  line-height: 1.2;
-  padding: 1rem 1.5rem;
+  line-height: 1;
+  padding: 1.5rem 2.5rem;
   border: none;
+  border-radius: 10rem;
+  text-decoration: none;
   cursor: pointer;
   transition: $transition;
 
   &:is(:hover, :focus) {
-    background-color: $primary;
-    color: $white;
+    background-color: $white;
+    text-decoration: none;
   }
 
   &.secondary {

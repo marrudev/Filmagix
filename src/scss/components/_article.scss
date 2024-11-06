@@ -1,0 +1,64 @@
+@use '../abstracts/' as *;
+
+article,
+.article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  & > img {
+    width: 100%;
+  }
+
+  & > * {
+    margin-top: 1em;
+  }
+
+  & > :first-child {
+    margin-top: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-align: start;
+    margin-bottom: 0;
+  }
+
+  .perex {
+    font-size: 1.25rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style-position: outside;
+    padding-left: 1rem;
+
+    li:not(:first-child) {
+      margin-top: 0.25rem;
+    }
+
+    li::marker {
+      color: $accent;
+    }
+  }
+
+  q::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: $primary;
+  }
+}

@@ -17,6 +17,14 @@ body {
   }
 }
 
+// Global
+
+.page-header {
+  > :is(:first-child) {
+    max-width: 48rem;
+  }
+}
+
 // Swipers
 
 .swiper-button-disabled {

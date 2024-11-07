@@ -11,8 +11,10 @@
   --background-light-hover: #402e52;
   --white: #ffffff;
   --black: #000000;
-  --cc-btn-primary-bg: #0b1f3a;
-  --cc-btn-primary-hover-bg: #050f1d;
+  --cc-btn-primary-bg: #40e0d0;
+  --cc-btn-primary-hover-bg: #19d3c1;
+  --cc-btn-secondary-text: black;
+  --cc-btn-primary-text: black;
 }
 
 /* CSS Reset */
@@ -189,6 +191,10 @@ a:is(:hover, :focus) {
 
 .text-center {
   text-align: center;
+}
+
+.fc--text-body {
+  color: #d0d0d0;
 }
 .button {
   display: -webkit-inline-box;
@@ -741,10 +747,22 @@ article ul li::marker,
           justify-content: center;
 }
 
+.fj-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .fa-start {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.fa-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .fa-center {
@@ -779,6 +797,14 @@ article ul li::marker,
 section.padding-both {
   padding: clamp(3rem, 1.5714rem + 4.5714vw, 5rem) 0;
 }
+.section.padding-bottom,
+section.padding-bottom {
+  padding-bottom: clamp(3rem, 1.5714rem + 4.5714vw, 5rem);
+}
+.section.padding-top-extra,
+section.padding-top-extra {
+  padding-top: calc(clamp(3rem, 1.5714rem + 4.5714vw, 5rem) * 2);
+}
 
 .w-full {
   width: 100%;
@@ -797,6 +823,10 @@ body {
 }
 .divider.secondary {
   background-color: #1f1528;
+}
+
+.page-header > :is(:first-child) {
+  max-width: 48rem;
 }
 
 .swiper-button-disabled {

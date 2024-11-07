@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @@include('./components/head-1.html')
+    <title>Filmagix s.r.o. - kreativní audiovizuální produkce</title>
+    @@include('./components/head-2.html')
+    <!-- SEO, meta značky, ikony, Open Graph… -->
+    <meta
+      name="description"
+      content="Zaujměte davy, přitáhněte zákazníky, zvyšte prodeje. Hravě s videem od Filmagix." />
+    <meta name="keywords" content="" />
+    <meta property="og:title" itemprop="name" content="Filmagix s.r.o. - kreativní audiovizuální produkce" />
+    <meta property="og:url" content="" />
+    <meta
+      property="og:description"
+      itemprop="description"
+      content="Zaujměte davy, přitáhněte zákazníky, zvyšte prodeje. Hravě s videem od Filmagix." />
+    <meta property="og:image" content="./images/og-image.jpg" />
+    @@include('./components/fav.html')
+  </head>
+  <body>
+    @@include('./components/header.html')
+    <main>
+      <!---- Header ---->
+      <section class="padding-top-extra padding-bottom">
+        <div class="container">
+          <div class="page-header flex flex-row fa-end fj-between">
+            <div class="flex flex-col gap-4">
+              <h1>Proč my?</h1>
+              <p>
+                Jsme zkušení zapálení kreativci s originálním přístupem k reklamní tvorbě pomocí virálního
+                a&nbsp;personlaizovaného videa.
+              </p>
+            </div>
+            <a href="./kontakt.html" class="button">Chci vyrobit reklamu</a>
+          </div>
+        </div>
+      </section>
+      <!---- Ocenění ---->
+      <section>
+        <div class="container">
+          <h2>Ocenění</h2>
+          <div class="grid-even-col col-4 even-gap-8">
+            <div class="card-oceneni flex flex-col">
+              <div class="oceneni-logo-wrapper"><img src="./images/oceneni/lemur.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('./components/cta-section.html') @@include('./components/footer.html')
+    @@include('./components/scripts.html')
+  </body>
+</html>

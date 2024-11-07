@@ -11,8 +11,10 @@
   --background-light-hover: #402e52;
   --white: #ffffff;
   --black: #000000;
-  --cc-btn-primary-bg: #0b1f3a;
-  --cc-btn-primary-hover-bg: #050f1d;
+  --cc-btn-primary-bg: #40e0d0;
+  --cc-btn-primary-hover-bg: #19d3c1;
+  --cc-btn-secondary-text: black;
+  --cc-btn-primary-text: black;
 }
 
 /* CSS Reset */
@@ -395,6 +397,20 @@ a:is(:hover, :focus) {
   -webkit-column-gap: 1rem;
      -moz-column-gap: 1rem;
           column-gap: 1rem;
+}
+.grid-even-col.even-gap-8 {
+  row-gap: 2rem;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+}
+@media (max-width: 30rem) {
+  .grid-even-col.even-gap-8 {
+    row-gap: 1rem;
+    -webkit-column-gap: 1rem;
+       -moz-column-gap: 1rem;
+            column-gap: 1rem;
+  }
 }
 .grid-even-col.col-2 {
   --grid-min-width: 600px;
@@ -2203,6 +2219,14 @@ section.padding-bottom-extra {
 .section.padding-top-extra,
 section.padding-top-extra {
   padding-top: calc(clamp(3rem, 1.5714rem + 4.5714vw, 5rem) * 2);
+}
+.section.padding-top-half,
+section.padding-top-half {
+  padding-top: calc(clamp(3rem, 1.5714rem + 4.5714vw, 5rem) / 2);
+}
+.section.padding-bottom-half,
+section.padding-bottom-half {
+  padding-bottom: calc(clamp(3rem, 1.5714rem + 4.5714vw, 5rem) / 2);
 }
 
 .shadow-none {
@@ -5988,6 +6012,10 @@ body {
 }
 .divider.secondary {
   background-color: #1f1528;
+}
+
+.page-header > :is(:first-child) {
+  max-width: 48rem;
 }
 
 .swiper-button-disabled {

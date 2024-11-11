@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @@include('./components/head-1.html')
+    <title>Filmagix s.r.o. - Naše nabídka</title>
+    @@include('./components/head-2.html')
+    <!-- SEO, meta značky, ikony, Open Graph… -->
+    <meta
+      name="description"
+      content="Zaujměte davy, přitáhněte zákazníky, zvyšte prodeje. Hravě s videem od Filmagix." />
+    <meta name="keywords" content="" />
+    <meta property="og:title" itemprop="name" content="Filmagix s.r.o. - kreativní audiovizuální produkce" />
+    <meta property="og:url" content="" />
+    <meta
+      property="og:description"
+      itemprop="description"
+      content="Zaujměte davy, přitáhněte zákazníky, zvyšte prodeje. Hravě s videem od Filmagix." />
+    <meta property="og:image" content="./images/og-image.jpg" />
+    @@include('./components/fav.html')
+  </head>
+  <body>
+    @@include('./components/header.html')
+    <main>
+      <!---- Header ---->
+      <section class="padding-top-extra padding-bottom">
+        <div class="container">
+          <div class="page-header flex flex-row fa-end fj-between">
+            <div class="flex flex-col gap-4">
+              <h1>Personalizovaná reklama</h1>
+              <p>
+                Text k personalizované reklamě Lorem ipsum je označení pro standardní pseudolatinský text užívaný v
+                grafickém designu a navrhování jako demonstrativní výplňový text při vytváření pracovních ukázek
+                grafických návrhů. Lipsum t
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---- Personalizovaná reklama ---->
+      <section class="padding-bottom">
+        <div class="container">
+          <h2>Nejnovější práce</h2>
+        </div>
+      </section>
+      <!---- Postup ---->
+      <section class="padding-bottom">
+        <div class="container">
+          <div class="card">
+            <h2>Jaký je postup</h2>
+            <ul class="mb-4">
+              <li>Navrhneme scénář personalizovaného videa na základě vašich zákaznických dat</li>
+              <li>Naintegrujeme přehrávač s personalizovaným videem na váš web, aplikaci či emailovou platformu</li>
+              <li>Pomocí personalizace efektivně zacílíme na každou vaši cílovou skupinu</li>
+              <li>V čase můžeme dynamicky měnit jakékoliv údaje ve videu</li>
+            </ul>
+            <a href="./kontakt.html" class="button">Nezávazně poptat</a>
+          </div>
+        </div>
+      </section>
+      <!---- Další nabídka ---->
+      <section>
+        <div class="container">
+          <h2>Naše další nabídka</h2>
+          <div class="grid-even-col col-2 even-gap-6">
+            @@include('./components/card-hrana-reklama.html') @@include('./components/card-animovana-reklama.html')
+          </div>
+        </div>
+      </section>
+      @@include('./components/cta-section.html')
+    </main>
+    @@include('./components/footer.html') @@include('./components/scripts.html')
+  </body>
+</html>

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     @@include('./components/head-1.html')
-    <title>Filmagix s.r.o. - kreativní audiovizuální produkce</title>
+    <title>Filmagix s.r.o. - Naše nabídka</title>
     @@include('./components/head-2.html')
     <!-- SEO, meta značky, ikony, Open Graph… -->
     <meta
@@ -21,13 +21,28 @@
   <body>
     @@include('./components/header.html')
     <main>
-      <!---- Hero ---->
-      <section>
-        <div class="container"><a href="" class="button">Hello world</a></div>
+      <!---- Header ---->
+      <section class="padding-top-extra padding-bottom">
+        <div class="container">
+          <div class="page-header flex flex-row fa-end fj-between">
+            <div class="flex flex-col gap-4">
+              <h1>Naše nabídka</h1>
+              <p>
+                Jsme otevření nejen našim základním nabídkám, ale jakémukoliv zajímavému projektu. Zvládněme vyrobit
+                pěkné věci s jakýmkoliv rozpočtem.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
-      <!---- O nás ---->
+      <!---- Naše nabídka ---->
       <section>
-        <div class="container"><a href="" class="button">Hello world</a></div>
+        <div class="container">
+          <div class="grid-even-col col-3 even-gap-6">
+            @@include('./components/card-personalizovana-reklama.html')
+            @@include('./components/card-hrana-reklama.html') @@include('./components/card-animovana-reklama.html')
+          </div>
+        </div>
       </section>
       @@include('./components/cta-section.html')
     </main>

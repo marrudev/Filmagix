@@ -158,6 +158,20 @@ h4,
   color: #ffffff;
 }
 
+h2,
+h3 {
+  margin-bottom: 1.5rem;
+}
+
+h2:has(+ p) {
+  margin-bottom: 1rem;
+}
+
+.subheader {
+  margin-bottom: 1.5rem;
+  max-width: 48rem;
+}
+
 h1,
 .h1 {
   font-family: "Martel Sans", serif;
@@ -182,7 +196,7 @@ h3,
 h4,
 .h4 {
   font-family: "Martel Sans", serif;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 600;
 }
 
@@ -398,14 +412,14 @@ a:is(:hover, :focus) {
      -moz-column-gap: 1rem;
           column-gap: 1rem;
 }
-.grid-even-col.even-gap-8 {
-  row-gap: 2rem;
-  -webkit-column-gap: 2rem;
-     -moz-column-gap: 2rem;
-          column-gap: 2rem;
+.grid-even-col.even-gap-6 {
+  row-gap: 1.5rem;
+  -webkit-column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem;
 }
 @media (max-width: 30rem) {
-  .grid-even-col.even-gap-8 {
+  .grid-even-col.even-gap-6 {
     row-gap: 1rem;
     -webkit-column-gap: 1rem;
        -moz-column-gap: 1rem;
@@ -537,7 +551,7 @@ tr.active ~ tr:last-child {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1;
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 2.5rem 1.25rem 2.5rem;
   border: none;
   border-radius: 10rem;
   text-decoration: none;
@@ -1075,6 +1089,109 @@ article q::before,
 
 /* purgecss end ignore */
 /* purgecss start ignore */
+.card {
+  background-color: #2d2039;
+  padding: 2.5rem clamp(1rem, -0.875rem + 6vw, 2.5rem);
+}
+
+.card-oceneni .card-oceneni-logo-wrapper {
+  padding: 1.5rem;
+}
+.card-oceneni .card-oceneni-logo-wrapper img {
+  width: 100%;
+  max-width: 10rem;
+}
+.card-oceneni .card-oceneni-footer {
+  background-color: #2d2039;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.card-team .card-team-photo {
+  margin-bottom: 1.5rem;
+}
+.card-team .card-team-photo img {
+  width: 100%;
+}
+.card-team .card-team-footer .h4 {
+  margin-bottom: 0.25rem;
+}
+.card-team .card-team-footer p:is(:nth-child(2)) {
+  margin-bottom: 1rem;
+}
+
+.card-portfolio {
+  text-decoration: none;
+}
+.card-portfolio .card-portfolio-head img {
+  display: block;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.card-portfolio .card-portfolio-footer {
+  padding: 1rem;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  background-color: #2d2039;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  height: 100%;
+}
+.card-portfolio:is(:hover, :focus) {
+  text-decoration: none;
+}
+.card-portfolio:is(:hover, :focus) .card-portfolio-footer {
+  background-color: #402e52;
+}
+
+.card-napsali-o-nas {
+  text-decoration: none;
+  color: #1f1528;
+  background-color: #ffffff;
+  padding: 1.5rem 1.5rem;
+  border-radius: 2.5rem;
+}
+.card-napsali-o-nas .media-logo {
+  height: 2.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: auto;
+}
+
+.card-nabidka {
+  text-decoration: none;
+}
+.card-nabidka .card-nabidka-head img,
+.card-nabidka .card-nabidka-head video {
+  display: block;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.card-nabidka .card-nabidka-footer {
+  padding-inline: clamp(1rem, 0.375rem + 2vw, 1.5rem);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  background-color: #2d2039;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  height: 100%;
+}
+.card-nabidka .card-nabidka-footer > *:is(:not(:last-child)) {
+  margin-bottom: 1.5rem;
+}
+.card-nabidka .card-nabidka-footer .h3 {
+  margin-bottom: 0.5rem;
+}
+.card-nabidka .card-nabidka-footer .button {
+  margin-top: auto;
+}
+
 /* purgecss end ignore */
 .container {
   --container-max-width: 1400px;
@@ -6014,8 +6131,41 @@ body {
   background-color: #1f1528;
 }
 
-.page-header > :is(:first-child) {
+.page-header p {
   max-width: 48rem;
+}
+
+.text-limited-width {
+  max-width: 48rem;
+}
+
+.visible-lines-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ul:not(.nav-menu-list) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0;
+  padding: 0;
+  list-style-position: outside;
+  padding-left: 1.25rem;
+}
+ul:not(.nav-menu-list) li {
+  text-align: start;
+}
+ul:not(.nav-menu-list) li::marker {
+  color: #40e0d0;
 }
 
 .swiper-button-disabled {

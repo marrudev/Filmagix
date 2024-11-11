@@ -20,8 +20,36 @@ body {
 // Global
 
 .page-header {
-  > :is(:first-child) {
-    max-width: 48rem;
+  p {
+    max-width: $max-width-text;
+  }
+}
+
+.text-limited-width {
+  max-width: $max-width-text;
+}
+
+.visible-lines-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ul:not(.nav-menu-list) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0;
+  padding: 0;
+  list-style-position: outside;
+  padding-left: 1.25rem;
+  li {
+    text-align: start;
+    &::marker {
+      color: $accent;
+    }
   }
 }
 

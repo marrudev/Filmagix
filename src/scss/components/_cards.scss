@@ -2,4 +2,124 @@
 
 /* purgecss start ignore */
 
+.card {
+  background-color: $background-light;
+  padding: 2.5rem clamp(1rem, -0.875rem + 6vw, 2.5rem);
+}
+
+.card-oceneni {
+  .card-oceneni-logo-wrapper {
+    padding: 1.5rem;
+
+    img {
+      width: 100%;
+      max-width: 10rem;
+    }
+  }
+  .card-oceneni-footer {
+    background-color: $background-light;
+    padding: 1rem;
+    border-radius: $border-radius-md;
+  }
+}
+
+.card-team {
+  .card-team-photo {
+    margin-bottom: 1.5rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .card-team-footer {
+    .h4 {
+      margin-bottom: 0.25rem;
+    }
+
+    p:is(:nth-child(2)) {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.card-portfolio {
+  text-decoration: none;
+
+  .card-portfolio-head {
+    img {
+      display: block;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  .card-portfolio-footer {
+    padding: 1rem;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    background-color: $background-light;
+    transition: all 200ms ease-in-out;
+    height: 100%;
+  }
+
+  &:is(:hover, :focus) {
+    text-decoration: none;
+    .card-portfolio-footer {
+      background-color: $background-light-hover;
+    }
+  }
+}
+
+.card-napsali-o-nas {
+  text-decoration: none;
+  color: $primary;
+  background-color: $white;
+  padding: 1.5rem 1.5rem;
+  border-radius: $border-radius-lg;
+
+  .media-logo {
+    height: 2.5rem;
+    object-fit: contain;
+    margin-top: auto;
+  }
+}
+
+.card-nabidka {
+  text-decoration: none;
+
+  .card-nabidka-head {
+    img,
+    video {
+      display: block;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .card-nabidka-footer {
+    padding-inline: clamp(1rem, 0.375rem + 2vw, 1.5rem);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    background-color: $background-light;
+    transition: all 200ms ease-in-out;
+    height: 100%;
+
+    > *:is(:not(:last-child)) {
+      margin-bottom: 1.5rem;
+    }
+
+    .h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .button {
+      margin-top: auto;
+    }
+  }
+}
+
 /* purgecss end ignore */

@@ -198,6 +198,10 @@ h4,
   font-weight: 600;
 }
 
+.fs-small {
+  font-size: 0.85rem;
+}
+
 a {
   color: #40e0d0;
   text-decoration: underline;
@@ -218,6 +222,10 @@ a:is(:hover, :focus) {
 
 .text-center {
   text-align: center;
+}
+
+.fc--accent {
+  color: #40e0d0;
 }
 
 .fc--text-body {
@@ -308,14 +316,6 @@ a:is(:hover, :focus) {
 .button.outlined:is(:hover, :focus) {
   background-color: #40e0d0;
   color: #ffffff;
-}
-.button.tab-button {
-  background-color: #40e0d0;
-  color: #1f1528;
-}
-.button.tab-button:is(:hover, :focus, [aria-selected=true]) {
-  color: #ffffff;
-  background-color: #1f1528;
 }
 footer,
 .footer {
@@ -692,11 +692,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-direction: row;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -704,10 +703,20 @@ header {
      -moz-column-gap: clamp(1.5rem, 0.8333rem + 2.2222vw, 2.5rem);
           column-gap: clamp(1.5rem, 0.8333rem + 2.2222vw, 2.5rem);
   row-gap: 0.5rem;
-  padding: 0;
   margin: 0;
-  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.tab-button {
+  text-decoration: none;
+  color: #ffffff;
   white-space: nowrap;
+}
+.tab-button:is(:hover, :focus, [aria-selected=true]) {
+  color: #40e0d0;
+  text-decoration: underline;
+  text-decoration-thickness: max(0.08em, 1px);
+  text-underline-offset: 0.25em;
 }
 
 article,
@@ -834,6 +843,14 @@ article ul li::marker,
   transition: all 200ms ease-in-out;
   height: 100%;
 }
+.card-portfolio .card-portfolio-footer img {
+  max-height: 3.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.card-portfolio .card-portfolio-footer:has(img) {
+  padding: 0 1rem;
+}
 .card-portfolio:is(:hover, :focus) {
   text-decoration: none;
 }
@@ -884,6 +901,57 @@ article ul li::marker,
 }
 .card-nabidka .card-nabidka-footer .button {
   margin-top: auto;
+}
+
+.card-featured-work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #2d2039;
+}
+.card-featured-work .card-featured-work-thumb {
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  -ms-flex-preferred-size: 15rem;
+      flex-basis: 15rem;
+}
+.card-featured-work .card-featured-work-thumb img {
+  width: 100%;
+}
+.card-featured-work .card-featured-content {
+  -ms-flex-preferred-size: 20rem;
+      flex-basis: 20rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 1.5rem;
+}
+.card-featured-work .card-featured-content img {
+  max-height: 2.5rem;
+  margin-bottom: 1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 62rem) {
+  .card-featured-work {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-featured-work .card-featured-content {
+    -ms-flex-preferred-size: 0rem;
+        flex-basis: 0rem;
+  }
+  .card-featured-work .card-featured-work-thumb {
+    -ms-flex-preferred-size: 0rem;
+        flex-basis: 0rem;
+  }
 }
 .container {
   --container-max-width: 1400px;
@@ -983,8 +1051,16 @@ section.padding-top-extra {
   padding-top: calc(clamp(3rem, 1.5714rem + 4.5714vw, 5rem) * 2);
 }
 
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .w-full {
@@ -1022,7 +1098,7 @@ body {
   text-overflow: ellipsis;
 }
 
-ul:not(.nav-menu-list) {
+ul:not(.nav-menu-list, .tabs-list) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1036,10 +1112,10 @@ ul:not(.nav-menu-list) {
   list-style-position: outside;
   padding-left: 1.25rem;
 }
-ul:not(.nav-menu-list) li {
+ul:not(.nav-menu-list, .tabs-list) li {
   text-align: start;
 }
-ul:not(.nav-menu-list) li::marker {
+ul:not(.nav-menu-list, .tabs-list) li::marker {
   color: #40e0d0;
 }
 

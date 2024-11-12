@@ -37,7 +37,7 @@ body {
   text-overflow: ellipsis;
 }
 
-ul:not(.nav-menu-list) {
+ul:not(.nav-menu-list, .tabs-list) {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -86,7 +86,7 @@ ul:not(.nav-menu-list) {
   }
 }
 
-//
+// utility
 .social-icon {
   transition: $transition;
   color: $accent;

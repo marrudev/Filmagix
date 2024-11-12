@@ -62,6 +62,15 @@
     background-color: $background-light;
     transition: all 200ms ease-in-out;
     height: 100%;
+
+    img {
+      max-height: 3.5rem;
+      object-fit: contain;
+    }
+
+    &:has(img) {
+      padding: 0 1rem;
+    }
   }
 
   &:is(:hover, :focus) {
@@ -118,6 +127,45 @@
 
     .button {
       margin-top: auto;
+    }
+  }
+}
+
+.card-featured-work {
+  display: flex;
+  flex-direction: row;
+  background-color: $background-light;
+
+  .card-featured-work-thumb {
+    flex-grow: 4;
+    flex-basis: 15rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .card-featured-content {
+    flex-basis: 20rem;
+    flex-grow: 1;
+    padding: 1.5rem;
+
+    img {
+      max-height: 2.5rem;
+      margin-bottom: 1rem;
+      object-fit: contain;
+    }
+  }
+
+  @media (max-width: $medium-large) {
+    flex-direction: column;
+
+    .card-featured-content {
+      flex-basis: 0rem;
+    }
+
+    .card-featured-work-thumb {
+      flex-basis: 0rem;
     }
   }
 }

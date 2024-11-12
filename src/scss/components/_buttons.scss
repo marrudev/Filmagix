@@ -41,16 +41,6 @@
       color: $white;
     }
   }
-
-  &.tab-button {
-    background-color: $accent;
-    color: $primary;
-
-    &:is(:hover, :focus, [aria-selected='true']) {
-      color: $white;
-      background-color: $primary;
-    }
-  }
 }
 
 /* purgecss end ignore */

@@ -23,12 +23,92 @@
     <main>
       <!---- Hero ---->
       <section>
-        <div class="container"><a href="" class="button">Hello world</a></div>
+        <div class="container"><a href="" class="button">Hero sekce</a></div>
       </section>
-      <!---- O nás ---->
+      <!---- Náš příběh ---->
       <section>
-        <div class="container"><a href="" class="button">Hello world</a></div>
+        <div class="container"><a href="" class="button">Náš příběh</a></div>
       </section>
+      <!---- Naše nabídka ---->
+      <section class="padding-bottom">
+        <div class="container">
+          <h2>Naše nabídka</h2>
+          <p class="subheader">Poradíme si s jakýmkoliv rozpočtem. Ozvěte se nám a vymyslíme vhodné řešení.</p>
+          <div class="grid-even-col col-3 even-gap-6">
+            @@include('./components/card-personalizovana-reklama.html')
+            @@include('./components/card-hrana-reklama.html') @@include('./components/card-animovana-reklama.html')
+          </div>
+        </div>
+      </section>
+      <!---- Nejnovější práce ---->
+      <section>
+        <div class="container">
+          <h2>Nejnovější práce</h2>
+          <div class="card-featured-work mb-10">
+            <a
+              class="card-featured-work-thumb"
+              data-fslightbox="featured"
+              href="https://www.youtube.com/watch?v=BXURjA4ABVA">
+              <img src="./images/thumbnails/hyundai.jpg" alt="Video thumbnail" />
+            </a>
+            <div class="card-featured-content flex flex-col fa-start fj-center gap-4">
+              <img class="" src="./images/clients/hyundai.png" alt="Logo klienta" />
+              <p>
+                I my jsme přidali svůj díl do skládačky nové marketingové strategie Hyundai. Povedlo se? Posuďte sami.
+              </p>
+              <a href="./pripadove-studie/hyundai.html">Zobrazit studii</a>
+            </div>
+          </div>
+          <div class="grid-even-col col-4 even-gap-4 mb-4">
+            <a
+              class="card-portfolio flex flex-col"
+              data-fslightbox="vybrano-pro-vas"
+              href="https://www.youtube.com/watch?v=BXURjA4ABVA">
+              <div class="card-portfolio-head">
+                <img src="./images/thumbnails/eet-terminator.jpeg" alt="Video thumbnail" />
+              </div>
+              <div class="card-portfolio-footer flex flex-col">
+                <img class="client-logo" src="./images/clients/hyundai-logo.png" alt="Logo klienta" />
+              </div>
+            </a>
+            <a
+              class="card-portfolio flex flex-col"
+              data-fslightbox="vybrano-pro-vas"
+              href="https://www.youtube.com/watch?v=BXURjA4ABVA">
+              <div class="card-portfolio-head">
+                <img src="./images/thumbnails/eet-terminator.jpeg" alt="Video thumbnail" />
+              </div>
+              <div class="card-portfolio-footer flex flex-col">
+                <img class="client-logo" src="./images/clients/hyundai-logo.png" alt="Logo klienta" />
+              </div>
+            </a>
+            <a
+              class="card-portfolio flex flex-col"
+              data-fslightbox="vybrano-pro-vas"
+              href="https://www.youtube.com/watch?v=BXURjA4ABVA">
+              <div class="card-portfolio-head">
+                <img src="./images/thumbnails/eet-terminator.jpeg" alt="Video thumbnail" />
+              </div>
+              <div class="card-portfolio-footer flex flex-col">
+                <img class="client-logo" src="./images/clients/hyundai-logo.png" alt="Logo klienta" />
+              </div>
+            </a>
+            <a
+              class="card-portfolio flex flex-col"
+              data-fslightbox="vybrano-pro-vas"
+              href="https://www.youtube.com/watch?v=BXURjA4ABVA">
+              <div class="card-portfolio-head">
+                <img src="./images/thumbnails/eet-terminator.jpeg" alt="Video thumbnail" />
+              </div>
+              <div class="card-portfolio-footer flex flex-col">
+                <img class="client-logo" src="./images/clients/hyundai-logo.png" alt="Logo klienta" />
+              </div>
+            </a>
+          </div>
+          <div class="flex fa-center fj-center"><a class="button" href="./portfolio.html">Zobrazit portfolio</a></div>
+        </div>
+      </section>
+      <script src="./js/fslightbox.js"></script>
       @@include('./components/cta-section.html')
     </main>
     @@include('./components/footer.html') @@include('./components/scripts.html')

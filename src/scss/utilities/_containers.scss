@@ -8,19 +8,19 @@
   padding-inline: $padding-site;
 }
 
-.container.--narrow {
+.container.narrow {
   --container-max-width: #{$container-max-width-narrow};
 }
 
-.container.--article {
-  --max-width: #{$container-max-width-article};
+.container.article {
+  --container-max-width: #{$container-max-width-article};
 }
 
-.container.--wide {
+.container.wide {
   --max-width: 100%;
 }
 
-.container.--full {
+.container.full {
   width: 100%;
   padding-inline: 0;
 }

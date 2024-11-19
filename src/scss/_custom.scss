@@ -25,6 +25,10 @@ body {
   }
 }
 
+.article-header {
+  margin-bottom: 2.5rem;
+}
+
 .text-limited-width {
   max-width: $max-width-text;
 }
@@ -86,7 +90,7 @@ ul:not(.nav-menu-list, .tabs-list) {
   }
 }
 
-// utility
+// Utility
 .social-icon {
   transition: $transition;
   color: $accent;
@@ -94,6 +98,20 @@ ul:not(.nav-menu-list, .tabs-list) {
   &:hover {
     color: $white;
   }
+}
+
+// Articles
+
+.youtube-iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 2.5rem;
+}
+
+.client-logo {
+  height: 4rem;
+  object-fit: contain;
+  align-self: flex-start;
 }
 
 /* purgecss end ignore */

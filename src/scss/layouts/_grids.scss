@@ -2,6 +2,7 @@
 
 .grid-even-col {
   --grid-min-width: 100px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min-width), 100%), 1fr));
   row-gap: 1rem;

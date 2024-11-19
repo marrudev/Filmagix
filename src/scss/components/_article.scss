@@ -15,8 +15,16 @@ article,
     margin-top: 1em;
   }
 
+  & > p {
+    margin-top: 1.5em;
+  }
+
   & > :first-child {
     margin-top: 0;
+  }
+
+  & > :last-child {
+    margin-top: 4em;
   }
 
   h1,

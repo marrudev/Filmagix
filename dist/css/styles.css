@@ -735,12 +735,14 @@ article,
           align-items: flex-start;
 }
 article > img,
-.article > img {
+article video,
+.article > img,
+.article video {
   width: 100%;
 }
 article > *,
 .article > * {
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 article > p,
 .article > p {
@@ -749,10 +751,6 @@ article > p,
 article > :first-child,
 .article > :first-child {
   margin-top: 0;
-}
-article > :last-child,
-.article > :last-child {
-  margin-top: 4em;
 }
 article h1,
 article h2,
@@ -765,6 +763,10 @@ article h4,
   text-align: start;
   margin-bottom: 0;
 }
+article h3,
+.article h3 {
+  font-size: 1.5rem;
+}
 article img,
 .article img {
   width: 100%;
@@ -772,6 +774,7 @@ article img,
 article ul,
 .article ul {
   margin: 0;
+  margin-top: 1em !important;
   padding: 0;
   list-style-position: outside;
   padding-left: 1rem;
@@ -783,6 +786,11 @@ article ul li:not(:first-child),
 article ul li::marker,
 .article ul li::marker {
   color: #40e0d0;
+}
+article .article-card,
+.article .article-card {
+  background-color: #2d2039;
+  padding: clamp(1rem, -0.875rem + 6vw, 2.5rem);
 }
 .label {
   display: -webkit-box;
@@ -1162,17 +1170,17 @@ ul:not(.nav-menu-list, .tabs-list) li::marker {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
   inset: 0;
 }
 .swiper .swiper-pagination .swiper-pagination-bullet {
   width: 0.75rem;
-  height: 0.35rem;
-  border-radius: 0;
+  height: 0.75rem;
+  border-radius: 1rem;
   background-color: #d0d0d0;
 }
 .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -1194,10 +1202,20 @@ ul:not(.nav-menu-list, .tabs-list) li::marker {
   margin-bottom: 2.5rem;
 }
 
+.swiper .youtube-iframe {
+  margin-bottom: 1rem;
+}
+
+.swiper-pagination {
+  margin-bottom: 2.5rem;
+}
+
 .client-logo {
-  height: 4rem;
+  height: max(4rem, 100%);
+  max-width: 20rem;
   -o-object-fit: contain;
      object-fit: contain;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  margin-bottom: 2.5rem;
 }

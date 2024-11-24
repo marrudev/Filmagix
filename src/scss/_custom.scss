@@ -72,15 +72,15 @@ ul:not(.nav-menu-list, .tabs-list) {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
     inset: 0;
 
     .swiper-pagination-bullet {
       width: 0.75rem;
-      height: 0.35rem;
-      border-radius: 0;
+      height: 0.75rem;
+      border-radius: 1rem;
       background-color: $text-body;
 
       &.swiper-pagination-bullet-active {
@@ -108,10 +108,20 @@ ul:not(.nav-menu-list, .tabs-list) {
   margin-bottom: 2.5rem;
 }
 
+.swiper .youtube-iframe {
+  margin-bottom: 1rem;
+}
+
+.swiper-pagination {
+  margin-bottom: 2.5rem;
+}
+
 .client-logo {
-  height: 4rem;
+  height: max(4rem, 100%);
+  max-width: 20rem;
   object-fit: contain;
   align-self: flex-start;
+  margin-bottom: 2.5rem;
 }
 
 /* purgecss end ignore */

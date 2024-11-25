@@ -76,4 +76,20 @@ article,
     background-color: $background-light;
     padding: clamp(1rem, -0.875rem + 6vw, 2.5rem);
   }
+
+  a {
+    color: $accent;
+    text-decoration: none;
+  }
+
+  a:is(:hover, :focus) {
+    text-decoration: underline;
+    text-decoration-thickness: max(0.08em, 1px);
+    text-underline-offset: 0.15em;
+    cursor: pointer;
+  }
+
+  a:has(img) {
+    width: 100%;
+  }
 }

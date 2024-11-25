@@ -1085,6 +1085,22 @@ article .article-card,
   background-color: #2d2039;
   padding: clamp(1rem, -0.875rem + 6vw, 2.5rem);
 }
+article a,
+.article a {
+  color: #40e0d0;
+  text-decoration: none;
+}
+article a:is(:hover, :focus),
+.article a:is(:hover, :focus) {
+  text-decoration: underline;
+  text-decoration-thickness: max(0.08em, 1px);
+  text-underline-offset: 0.15em;
+  cursor: pointer;
+}
+article a:has(img),
+.article a:has(img) {
+  width: 100%;
+}
 
 /* purgecss start ignore */
 .label {

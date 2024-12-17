@@ -82,6 +82,8 @@ body {
 // Global
 
 .page-header {
+  flex-wrap: wrap;
+  gap: 1.5rem;
   p {
     max-width: $max-width-text;
   }

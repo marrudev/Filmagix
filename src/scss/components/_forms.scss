@@ -5,13 +5,22 @@
 .form,
 form {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
+  background: $background-light;
+  padding: 2.5rem clamp(1rem, -0.875rem + 6vw, 2.5rem);
+  border-radius: $border-radius-md;
+
+  .button {
+    align-self: start;
+    width: max-content;
+  }
 }
 
 label,
 .form-label {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-family: $ff-accent;
+  color: $white;
   margin-bottom: 0.5rem;
 }
 
@@ -20,16 +29,33 @@ textarea {
   width: 100%;
   flex-grow: 1;
   font-size: $fs-regular;
-  color: $primary;
-  background-color: $white;
+  color: $text-body;
+  background-color: $background;
   padding: 0.75rem 1rem;
-  border: solid 1px $stroke;
-  outline: none;
+  border: solid 1px $background;
+  outline: solid 1px $background;
   resize: none;
+
+  &:is(:focus, :focus-visible) {
+    outline: 1px solid $stroke;
+  }
 }
 
+/* input:not(:placeholder-shown):valid {
+  outline-color: $accent;
+}
+
+input:not(:placeholder-shown):invalid {
+  outline-color: rgb(211, 55, 55);
+}
+
+input:focus:invalid,
+textarea:focus:invalid {
+  outline-color: $stroke;
+} */
+
 ::placeholder {
-  color: $text-body;
+  color: hsla(0, 0%, 100%, 0.4);
 }
 
 .select {
@@ -38,7 +64,8 @@ textarea {
   align-items: center;
   flex-grow: 1;
   position: relative;
-  border: 1px solid $stroke;
+  background: $background;
+  border: 1px solid $background;
   padding: 0.75rem 1rem;
   cursor: pointer;
 
@@ -48,20 +75,36 @@ textarea {
   }
 
   // Custom arrow
-  &::after {
+  /* &::after {
     content: '';
     justify-self: end;
     width: 0.6em;
     height: 0.45em;
     background-color: $text-body;
     clip-path: polygon(100% 0%, 0 0%, 50% 100%);
-  }
+  } */
+}
+
+select {
+  background: $background;
+  color: $text-body;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+/* select option[disabled] {
+  color: hsla(0, 0%, 100%, 0.4);
+}
+
+select option:not([disabled]) {
+  outline-color: $accent;
 }
 
 input:focus-within,
 textarea:focus-within {
   border: 1px solid $primary;
-}
+} */
 
 // Checkbox
 input[type='checkbox'] {

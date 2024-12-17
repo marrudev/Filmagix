@@ -437,6 +437,13 @@ a:is(:hover, :focus) {
      -moz-column-gap: 5rem;
           column-gap: 5rem;
 }
+.grid-even-col.col-2-form {
+  --grid-min-width: 450px;
+  row-gap: 2.5rem;
+  -webkit-column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
 .grid-even-col.col-3 {
   --grid-min-width: 420px;
 }
@@ -626,13 +633,25 @@ footer .divider-line,
 .form,
 form {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
+  background: #2d2039;
+  padding: 2.5rem clamp(1rem, -0.875rem + 6vw, 2.5rem);
+  border-radius: 1rem;
+}
+.form .button,
+form .button {
+  -ms-flex-item-align: start;
+      align-self: start;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 label,
 .form-label {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-family: "Martel Sans", serif;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
@@ -643,32 +662,44 @@ textarea {
       -ms-flex-positive: 1;
           flex-grow: 1;
   font-size: 1rem;
-  color: #1f1528;
-  background-color: #ffffff;
+  color: #d0d0d0;
+  background-color: #1f1528;
   padding: 0.75rem 1rem;
-  border: solid 1px #432f55;
-  outline: none;
+  border: solid 1px #1f1528;
+  outline: solid 1px #1f1528;
   resize: none;
 }
+input:not(.button, select):is(:focus, :focus-visible),
+textarea:is(:focus, :focus-visible) {
+  outline: 1px solid #432f55;
+}
 
+/* input:not(:placeholder-shown):valid {
+  outline-color: $accent;
+}
+
+input:not(:placeholder-shown):invalid {
+  outline-color: rgb(211, 55, 55);
+}
+
+input:focus:invalid,
+textarea:focus:invalid {
+  outline-color: $stroke;
+} */
 ::-webkit-input-placeholder {
-  color: #d0d0d0;
+  color: hsla(0, 0%, 100%, 0.4);
 }
-
 ::-moz-placeholder {
-  color: #d0d0d0;
+  color: hsla(0, 0%, 100%, 0.4);
 }
-
 :-ms-input-placeholder {
-  color: #d0d0d0;
+  color: hsla(0, 0%, 100%, 0.4);
 }
-
 ::-ms-input-placeholder {
-  color: #d0d0d0;
+  color: hsla(0, 0%, 100%, 0.4);
 }
-
 ::placeholder {
-  color: #d0d0d0;
+  color: hsla(0, 0%, 100%, 0.4);
 }
 
 .select {
@@ -681,28 +712,43 @@ textarea {
       -ms-flex-positive: 1;
           flex-grow: 1;
   position: relative;
-  border: 1px solid #432f55;
+  background: #1f1528;
+  border: 1px solid #1f1528;
   padding: 0.75rem 1rem;
   cursor: pointer;
+  /* &::after {
+    content: '';
+    justify-self: end;
+    width: 0.6em;
+    height: 0.45em;
+    background-color: $text-body;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  } */
 }
 .select select, .select::after {
   grid-area: select;
 }
-.select::after {
-  content: "";
-  justify-self: end;
-  width: 0.6em;
-  height: 0.45em;
-  background-color: #d0d0d0;
-  -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
-          clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+
+select {
+  background: #1f1528;
+  color: #d0d0d0;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+/* select option[disabled] {
+  color: hsla(0, 0%, 100%, 0.4);
+}
+
+select option:not([disabled]) {
+  outline-color: $accent;
 }
 
 input:focus-within,
 textarea:focus-within {
-  border: 1px solid #1f1528;
-}
-
+  border: 1px solid $primary;
+} */
 input[type=checkbox] {
   position: absolute;
   opacity: 0;
@@ -801,15 +847,14 @@ header {
 .nav-menu-list a {
   background: #1f1528;
   color: #ffffff;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 500;
-  text-transform: uppercase;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
+  text-decoration: none;
 }
 .nav-menu-list a:is(:hover, :focus) {
-  background: #40e0d0;
-  text-decoration: none;
+  color: #40e0d0;
 }
 
 /* Menu button */
@@ -904,6 +949,9 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 0.5rem;
     width: 100%;
   }
@@ -919,11 +967,10 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.15);
     padding: 1rem 1.5rem;
     border-radius: 0.25rem;
   }
@@ -939,8 +986,7 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     background: transparent;
     text-transform: none;
   }
@@ -6322,6 +6368,11 @@ body {
           flex-grow: 2;
 }
 
+.page-header {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+}
 .page-header p {
   max-width: 48rem;
 }

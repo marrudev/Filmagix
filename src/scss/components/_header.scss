@@ -43,15 +43,14 @@ header {
   a {
     background: $primary;
     color: $white;
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 500;
-    text-transform: uppercase;
     padding: 0.25rem 0.5rem;
     border-radius: 0.25rem;
+    text-decoration: none;
 
     &:is(:hover, :focus) {
-      background: $accent;
-      text-decoration: none;
+      color: $accent;
     }
   }
 }
@@ -130,6 +129,7 @@ header {
       padding: 1rem 0;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       gap: 0.5rem;
       width: 100%;
     }
@@ -144,9 +144,8 @@ header {
   .nav-menu-list li {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.15);
     padding: 1rem 1.5rem;
     border-radius: $border-radius-sm;
 
@@ -158,8 +157,7 @@ header {
 
   .nav-menu-list a {
     display: flex;
-    width: 100%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     background: transparent;
     text-transform: none;
 

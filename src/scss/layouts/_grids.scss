@@ -33,6 +33,12 @@
     column-gap: 5rem;
   }
 
+  &.col-2-form {
+    --grid-min-width: 450px;
+    row-gap: 2.5rem;
+    column-gap: 1.5rem;
+  }
+
   &.col-3 {
     --grid-min-width: 420px;
 

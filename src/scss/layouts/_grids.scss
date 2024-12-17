@@ -27,6 +27,12 @@
     --grid-min-width: 600px;
   }
 
+  &.col-2-homepage {
+    --grid-min-width: 400px;
+    row-gap: 1.5rem;
+    column-gap: 5rem;
+  }
+
   &.col-3 {
     --grid-min-width: 420px;
 

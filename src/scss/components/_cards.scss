@@ -29,6 +29,8 @@
 
     img {
       width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
     }
   }
 
@@ -64,12 +66,12 @@
     height: 100%;
 
     img {
-      max-height: 3.5rem;
+      height: 1.5rem;
       object-fit: contain;
     }
 
     &:has(img) {
-      padding: 0 1rem;
+      padding: 0.75rem 1rem;
     }
   }
 
@@ -167,6 +169,34 @@
     .card-featured-work-thumb {
       flex-basis: 0rem;
     }
+  }
+}
+
+.card-pripadova-studie {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: $background-light;
+
+  .card-pripadova-studie-thumb {
+    img {
+      width: 100%;
+    }
+  }
+
+  .card-pripadova-studie-content {
+    flex-basis: 20rem;
+    flex-grow: 1;
+    padding: 1.5rem;
+
+    img {
+      max-height: 2.5rem;
+      margin-bottom: 1rem;
+      object-fit: contain;
+    }
+  }
+
+  @media (max-width: $medium-large) {
+    grid-template-columns: 1fr;
   }
 }
 

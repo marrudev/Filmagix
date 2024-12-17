@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     @@include('./components/head-1.html')
-    <title>Filmagix s.r.o. - kreativní audiovizuální produkce</title>
+    <title>Filmagix s.r.o. - Naše nabídka</title>
     @@include('./components/head-2.html')
     <!-- SEO, meta značky, ikony, Open Graph… -->
     <meta
@@ -21,59 +21,23 @@
   <body>
     @@include('./components/header.html')
     <main>
-      <!---- Hero ---->
-      <section class="section-hero relative">
-        <video class="hero-bg-video" autoplay="" loop="" muted="" playsinline="">
-          <source src="./videos/hero-loop.mp4" type="video/mp4;" />
-          <source src="./videos/hero-loop.webm" type="video/webm" />
-        </video>
-        <div class="container relative">
-          <div class="hero-content-wrapper flex flex-row fa-center flex-wrap">
-            <div class="flex flex-col gap-2">
-              <h1>Otevřeme vám cestu k&nbsp;zákazníkům</h1>
-              <p>Navedeme vás díky virálnímu a personalizovanému interaktivnímu příběhu</p>
-            </div>
-            <a class="button shrink-0" href="./kontakt.html">Chci vyrobit reklamu</a>
-          </div>
-        </div>
-      </section>
-      <!---- Náš příběh ---->
-      <section class="padding-both">
+      <!---- Header ---->
+      <section class="padding-top-extra padding-bottom">
         <div class="container">
-          <div class="grid-even-col col-2-homepage">
-            <div class="flex flex-col gap-2">
-              <h2>Náš příběh</h2>
+          <div class="page-header flex flex-row fa-end fj-between">
+            <div class="flex flex-col gap-4">
+              <h1>Animovaná reklama</h1>
               <p>
-                Jsme nadšenci a specialisté na virální zábavná videa. Chceme posunout pohled na reklamu k lepšímu, aby
-                ji lidé milovali a pouštěli si jí dokola. Technicky nám pomáhá technologie
-                <a href="" target="_blank">Webout</a>
+                Text k animované reklamě Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém
+                designu a navrhování jako demonstrativní výplňový text při vytváření pracovních ukázek grafických
+                návrhů. Lipsum t
               </p>
-              <a href="./proc-my.html">Více o nás</a>
-            </div>
-            <div class="flex flex-col fa-center fj-center">
-              <video class="card-pripadova-studie-thumb mb-4" autoplay="" loop="" muted="" playsinline="">
-                <source src="./videos/pripadove-studie-thumbs/eeterminator.mp4" type="video/mp4;" />
-                <source src="./videos/pripadove-studie-thumbs/eeterminator.webm" type="video/webm" />
-              </video>
-              <p class="h3">1 500 000</p>
-              <p>Zhlédnutí</p>
             </div>
           </div>
         </div>
       </section>
-      <!---- Naše nabídka ---->
+      <!---- Animovaná reklama ---->
       <section class="padding-bottom">
-        <div class="container">
-          <h2>Naše nabídka</h2>
-          <p class="subheader">Poradíme si s jakýmkoliv rozpočtem. Ozvěte se nám a vymyslíme vhodné řešení.</p>
-          <div class="grid-even-col col-3 even-gap-6">
-            @@include('./components/card-personalizovana-reklama.html')
-            @@include('./components/card-hrana-reklama.html') @@include('./components/card-animovana-reklama.html')
-          </div>
-        </div>
-      </section>
-      <!---- Nejnovější práce ---->
-      <section>
         <div class="container">
           <h2>Nejnovější práce</h2>
           <div class="card-featured-work mb-10">
@@ -91,7 +55,7 @@
               <a class="button" href="./pripadove-studie/hyundai.html">Zobrazit studii</a>
             </div>
           </div>
-          <div class="grid-even-col col-4 even-gap-4 mb-4">
+          <div class="grid-even-col col-4 even-gap-4">
             <a
               class="card-portfolio flex flex-col"
               data-fslightbox="vybrano-pro-vas"
@@ -111,7 +75,7 @@
                 <img src="./images/thumbnails/eet-terminator.jpeg" alt="Video thumbnail" />
               </div>
               <div class="card-portfolio-footer flex flex-col">
-                <img src="./images/clients/hyundai-logo.png" alt="Logo klienta" />
+                <img src="./images/clients/mapei-logo.png" alt="Logo klienta" />
               </div>
             </a>
             <a
@@ -122,25 +86,38 @@
                 <img src="./images/thumbnails/eet-terminator.jpeg" alt="Video thumbnail" />
               </div>
               <div class="card-portfolio-footer flex flex-col">
-                <img src="./images/clients/hyundai-logo.png" alt="Logo klienta" />
-              </div>
-            </a>
-            <a
-              class="card-portfolio flex flex-col"
-              data-fslightbox="vybrano-pro-vas"
-              href="https://www.youtube.com/watch?v=BXURjA4ABVA">
-              <div class="card-portfolio-head">
-                <img src="./images/thumbnails/eet-terminator.jpeg" alt="Video thumbnail" />
-              </div>
-              <div class="card-portfolio-footer flex flex-col">
-                <img src="./images/clients/hyundai-logo.png" alt="Logo klienta" />
+                <img src="./images/clients/akka-logo.png" alt="Logo klienta" />
               </div>
             </a>
           </div>
-          <div class="flex fa-center fj-center"><a class="button" href="./portfolio.html">Zobrazit portfolio</a></div>
         </div>
       </section>
       <script src="./js/fslightbox.js"></script>
+      <!---- Postup ---->
+      <section class="padding-bottom">
+        <div class="container">
+          <div class="card">
+            <h2>Jaký je postup</h2>
+            <ul class="mb-4">
+              <li>Navrhneme scénář personalizovaného videa na základě vašich zákaznických dat</li>
+              <li>Naintegrujeme přehrávač s personalizovaným videem na váš web, aplikaci či emailovou platformu</li>
+              <li>Pomocí personalizace efektivně zacílíme na každou vaši cílovou skupinu</li>
+              <li>V čase můžeme dynamicky měnit jakékoliv údaje ve videu</li>
+            </ul>
+            <a href="./kontakt.html" class="button">Nezávazně poptat</a>
+          </div>
+        </div>
+      </section>
+      <!---- Další nabídka ---->
+      <section>
+        <div class="container">
+          <h2>Naše další nabídka</h2>
+          <div class="grid-even-col col-2 even-gap-6">
+            @@include('./components/card-personalizovana-reklama.html')
+            @@include('./components/card-hrana-reklama.html')
+          </div>
+        </div>
+      </section>
       @@include('./components/cta-section.html')
     </main>
     @@include('./components/footer.html') @@include('./components/scripts.html')

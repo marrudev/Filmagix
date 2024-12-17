@@ -40,6 +40,11 @@
     }
 
     p:is(:nth-child(2)) {
+      margin-bottom: 0.25rem;
+      color: $accent;
+    }
+
+    p:is(:nth-child(3)) {
       margin-bottom: 1rem;
     }
   }

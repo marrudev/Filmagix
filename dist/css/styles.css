@@ -216,6 +216,10 @@ a:is(:hover, :focus) {
   cursor: pointer;
 }
 
+.fs-medium {
+  font-size: 1.25rem;
+}
+
 .fw-600 {
   font-weight: 600;
 }
@@ -291,6 +295,10 @@ a:is(:hover, :focus) {
 }
 .grid-even-col.col-4 {
   --grid-min-width: 260px;
+}
+
+.grid-offer-cards {
+  grid-template-columns: 1fr 1fr;
 }
 .button {
   display: -webkit-inline-box;
@@ -401,6 +409,7 @@ textarea {
   border: solid 1px #1f1528;
   outline: solid 1px #1f1528;
   resize: none;
+  caret-color: #40e0d0;
 }
 input:not(.button, select):is(:focus, :focus-visible),
 textarea:is(:focus, :focus-visible) {
@@ -532,6 +541,7 @@ header {
   left: 0;
   z-index: 1000;
   background: #1f1528;
+  overflow-x: clip;
 }
 
 .main-nav {
@@ -994,6 +1004,9 @@ article a:has(img),
 }
 .card-nabidka .card-nabidka-footer .button {
   margin-top: auto;
+}
+.card-nabidka .card-nabidka-footer ul {
+  width: 100%;
 }
 
 .card-featured-work {

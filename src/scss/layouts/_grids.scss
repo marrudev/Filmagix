@@ -51,3 +51,7 @@
     --grid-min-width: 260px;
   }
 }
+
+.grid-offer-cards {
+  grid-template-columns: 1fr 1fr;
+}

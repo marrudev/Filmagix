@@ -31,7 +31,7 @@
           <div class="hero-content-wrapper flex flex-row fa-center flex-wrap">
             <div class="flex flex-col gap-2">
               <h1>Otevřeme vám cestu k&nbsp;zákazníkům</h1>
-              <p>Navedeme vás díky virálnímu a personalizovanému interaktivnímu příběhu</p>
+              <p class="fs-medium">Navedeme vás díky virálnímu a personalizovanému interaktivnímu příběhu</p>
             </div>
             <a class="button shrink-0" href="./kontakt.html">Chci vyrobit reklamu</a>
           </div>
@@ -41,7 +41,7 @@
       <section class="padding-both">
         <div class="container">
           <div class="grid-even-col col-2-homepage">
-            <div class="flex flex-col">
+            <div class="flex flex-col fj-center">
               <h2 class="mb-4">Náš příběh</h2>
               <p class="mb-6">
                 Jsme videokouzelníci - specialisté na příběhy s pořádnou dávkou fantazie. Rozesmáli jsme davy
@@ -52,11 +52,11 @@
               <a href="./proc-my.html">Více o nás</a>
             </div>
             <div class="flex flex-col fa-center fj-center">
-              <video class="card-pripadova-studie-thumb mb-4" autoplay="" loop="" muted="" playsinline="">
-                <source src="./videos/pripadove-studie-thumbs/eeterminator.mp4" type="video/mp4;" />
-                <source src="./videos/pripadove-studie-thumbs/eeterminator.webm" type="video/webm" />
+              <video class="w-full mb-4" autoplay loop muted playsinline>
+                <source src="./videos/hp-viral.webm" type="video/webm" />
+                <source src="./videos/hp-viral.mp4" type="video/mp4;" />
               </video>
-              <p class="h3">1 500 000</p>
+              <p class="h3 number-counter">1 500 000</p>
               <p>Zhlédnutí</p>
             </div>
           </div>
@@ -69,9 +69,66 @@
           <p class="subheader">
             Čarujeme i s čísly! Poradíme si s jakýmkoliv rozpočtem. Ozvěte se nám a najdeme vhodné řešení.
           </p>
-          <div class="grid-even-col col-3 even-gap-6">
-            @@include('./components/card-personalizovana-reklama.html')
-            @@include('./components/card-hrana-reklama.html') @@include('./components/card-animovana-reklama.html')
+          <div class="grid-even-col grid-offer-cards even-gap-6">
+            <div class="card-nabidka flex flex-col">
+              <div class="card-nabidka-head flex fa-center fj-center">
+                <video autoplay loop muted playsinline>
+                  <source src="./videos/nabidka/personalizovana-reklama.webm" type="video/webm" />
+                  <source src="./videos/nabidka/personalizovana-reklama.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="card-nabidka-footer flex flex-col fa-center">
+                <h2 class="h3">Personalizovaný spot</h2>
+                <p class="fc--white fw-600">Zařídíme, aby byla každá reklama na míru každému zákazníkovi</p>
+                <a href="./kontakt.html" class="button">Nezávazně poptat</a>
+                <a href="./personalizovana-reklama.html">Více informací</a>
+              </div>
+            </div>
+            <div class="card-nabidka flex flex-col">
+              <div class="card-nabidka-head flex fa-center fj-center">
+                <video autoplay loop muted playsinline>
+                  <source src="./videos/nabidka/hrana-reklama.webm" type="video/webm" />
+                  <source src="./videos/nabidka/hrana-reklama.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="card-nabidka-footer flex flex-col fa-center">
+                <h2 class="h3">Hraný spot</h2>
+                <p class="fc--white fw-600">Zajistíme kompletní produkci hrané reklamy na klíč včetně scénáře</p>
+                <a href="./kontakt.html" class="button">Nezávazně poptat</a>
+                <a href="./hrana-reklama.html">Více informací</a>
+              </div>
+            </div>
+            <div class="card-nabidka flex flex-col">
+              <div class="card-nabidka-head flex fa-center fj-center">
+                <video autoplay loop muted playsinline>
+                  <source src="./videos/nabidka/animovana-reklama.webm" type="video/webm" />
+                  <source src="./videos/nabidka/animovana-reklama.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="card-nabidka-footer flex flex-col fa-center">
+                <h2 class="h3">Animovaný spot</h2>
+                <p class="fc--white fw-600">Digitální animace v libovolném stylu a v individuální délce</p>
+                <a href="./kontakt.html" class="button">Nezávazně poptat</a>
+                <a href="./animovana-reklama.html">Více informací</a>
+              </div>
+            </div>
+            <div class="card-nabidka flex flex-col">
+              <div class="card-nabidka-head flex fa-center fj-center">
+                <video autoplay loop muted playsinline>
+                  <!-- <source src="./videos/nabidka/magic-reels.webm" type="video/webm" /> -->
+                  <source src="./videos/nabidka/magic-reels.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="card-nabidka-footer flex flex-col fa-center">
+                <h2 class="h3">Magic reels</h2>
+                <p class="fc--white fw-600">
+                  Dynamika, efektivita, sériovost, zájem…to je několik hlavních surovin pro recept na opravdu kvalitní
+                  obsah sociálních sítí!
+                </p>
+                <a href="./kontakt.html" class="button">Nezávazně poptat</a>
+                <a href="./magic-reels.html">Více informací</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -9,6 +9,7 @@ header {
   left: 0;
   z-index: 1000;
   background: $primary;
+  overflow-x: clip;
 }
 
 .main-nav {

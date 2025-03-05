@@ -1,1 +1,1 @@
-var swiper=new Swiper(".hero-swiper",{pagination:{el:".swiper-pagination",clickable:!0}});
+var swiper=new Swiper(".hero-swiper",{pagination:{el:".swiper-pagination",clickable:!0},allowTouchMove:!0});

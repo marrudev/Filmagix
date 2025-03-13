@@ -241,7 +241,7 @@ a:is(:hover, :focus) {
 }
 
 .grid-even-col {
-  --grid-min-width: 100px;
+  --grid-min-width: 360px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min-width), 100%), 1fr));
@@ -298,7 +298,18 @@ a:is(:hover, :focus) {
 }
 
 .grid-offer-cards {
-  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr));
+  gap: 1.5rem;
+}
+.grid-offer-cards > :last-child {
+  grid-column: 2;
+}
+@media (max-width: 1000px) {
+  .grid-offer-cards > :last-child {
+    grid-column: auto;
+  }
 }
 .button {
   display: -webkit-inline-box;

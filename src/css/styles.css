@@ -617,7 +617,7 @@ tr.active ~ tr:last-child {
 /* purgecss start ignore */
 footer,
 .footer {
-  padding: 5rem 0;
+  padding: 5rem 0 2.5rem 0;
   border-top: solid 1px #432f55;
 }
 footer .divider-line,

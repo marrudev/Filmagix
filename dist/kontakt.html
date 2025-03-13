@@ -13,6 +13,43 @@
     <title>Filmagix s.r.o. - Naše nabídka</title>
     <!--- Preconnect--->
     <!-- Asynchronní JS (GA etc.) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-111362462-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-111362462-3');
+    </script>
+    <!--- Facebook Pixel -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '360132208045465');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=360132208045465&ev=PageView
+     &noscript=1" />
+    </noscript>
     <!--- @Import CSS --->
     <!--- Local CSS --->
     <base href="/dist/" />
@@ -51,7 +88,7 @@
           <a href="./index.html">
             <img class="nav-logo" src="./images/filmagix-logo.png" alt="Filmagix logo Logo" />
           </a>
-          <div class="menu-btn"><div class="menu-btn-burger"></div></div>
+          <div class="menu-btn" aria-label="Přepnout navigaci"><div class="menu-btn-burger"></div></div>
           <div class="nav-menu">
             <ul class="nav-menu-list">
               <li>
@@ -79,7 +116,7 @@
             <div class="flex flex-col gap-4"></div>
           </div>
           <div class="grid-even-col col-2-form">
-            <form class="form" action="">
+            <form class="form" action="https://www.formbackend.com/f/45a24769adedd170" method="POST">
               <h1 class="h3">Chcete se na něco zeptat? Napiště nám</h1>
               <div class="flex flex-col gap-6">
                 <div class="form-item flex flex-col">
@@ -109,7 +146,9 @@
                   <label for="zprava">Vaše zpráva</label><textarea id="zprava" name="zprava"></textarea>
                 </div>
               </div>
-              <p class="fs-small">Odesláním formuláře souhlasíte se zpracováním osobních údajů.</p>
+              <p class="fs-small">
+                Odesláním formuláře souhlasíte se zpracováním <a href="./t&c.html">osobních údajů</a>.
+              </p>
               <button class="button" type="submit">
                 <img src="./images/icons/plus.svg" alt="" />
                 <p>Odeslat</p>
@@ -125,8 +164,17 @@
               <div class="flex flex-col gap-4 fa-center text-center">
                 <p class="h3">Jsme na sociálních sítích</p>
                 <div class="flex flex-row fa-center fj-center gap-8 flex-wrap">
-                  <a class="social-icon" href="https://www.facebook.com/FILMAGIX/" target="_blank">
-                    <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                  <a
+                    class="social-icon"
+                    href="https://www.facebook.com/FILMAGIX/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <svg
+                      aria-label="Facebook"
+                      width="35"
+                      height="35"
+                      viewBox="0 0 35 35"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         fill="currentColor"
                         fill-rule="evenodd"
@@ -134,8 +182,17 @@
                         d="M17.1689 0.0993652C7.78152 0.0993652 0.168915 7.75107 0.168915 17.1878C0.168915 25.7541 6.44702 32.8278 14.6274 34.0637V21.7149H10.4216V17.2235H14.6274V14.2349C14.6274 9.28616 17.0261 7.11527 21.1163 7.11527C23.0764 7.11527 24.1134 7.26147 24.603 7.32776V11.248H21.8116C20.0759 11.248 19.4707 12.9038 19.4707 14.7687V17.2235H24.5605L23.8686 21.7149H19.4707V34.0994C27.7667 32.9689 34.1689 25.8374 34.1689 17.1878C34.1689 7.75107 26.5563 0.0993652 17.1689 0.0993652Z" />
                     </svg>
                   </a>
-                  <a class="social-icon" href="https://www.instagram.com/filmagix_/?hl=cs" target="_blank">
-                    <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                  <a
+                    class="social-icon"
+                    href="https://www.instagram.com/filmagix_/?hl=cs"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <svg
+                      aria-label="Instagram"
+                      width="35"
+                      height="35"
+                      viewBox="0 0 35 35"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         fill="currentColor"
                         fill-rule="evenodd"
@@ -143,8 +200,17 @@
                         d="M10.1933 0.186768H24.4733C29.9133 0.186768 34.3333 4.53431 34.3333 9.88513V23.931C34.3333 29.2873 29.9188 33.6294 24.4733 33.6294H10.1933C4.75328 33.6294 0.333282 29.2819 0.333282 23.931V9.88513C0.333282 4.52887 4.74776 0.186768 10.1933 0.186768ZM9.85321 3.5309C6.47322 3.5309 3.7332 6.226 3.7332 9.55057V24.2653C3.7332 27.5929 6.47021 30.285 9.85321 30.285H24.8132C28.1932 30.285 30.9332 27.5899 30.9332 24.2653V9.55057C30.9332 6.22303 28.1962 3.5309 24.8132 3.5309H9.85321ZM28.3834 8.12931C28.3834 6.97495 27.432 6.03915 26.2584 6.03915C25.0848 6.03915 24.1334 6.97495 24.1334 8.12931C24.1334 9.28368 25.0848 10.2195 26.2584 10.2195C27.432 10.2195 28.3834 9.28368 28.3834 8.12931ZM17.3334 8.54742C22.0278 8.54742 25.8334 12.2906 25.8334 16.9081C25.8334 21.5255 22.0278 25.2687 17.3334 25.2687C12.639 25.2687 8.83341 21.5255 8.83341 16.9081C8.83341 12.2906 12.639 8.54742 17.3334 8.54742ZM12.2333 16.9079C12.2333 14.1375 14.5167 11.8916 17.3333 11.8916C20.15 11.8916 22.4333 14.1375 22.4333 16.9079C22.4333 19.6784 20.15 21.9243 17.3333 21.9243C14.5167 21.9243 12.2333 19.6784 12.2333 16.9079Z" />
                     </svg>
                   </a>
-                  <a class="social-icon" href="https://www.youtube.com/c/FILMAGIXsro" target="_blank">
-                    <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                  <a
+                    class="social-icon"
+                    href="https://www.youtube.com/c/FILMAGIXsro"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <svg
+                      aria-label="YouTube"
+                      width="35"
+                      height="35"
+                      viewBox="0 0 35 35"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         fill="currentColor"
                         fill-rule="evenodd"
@@ -152,8 +218,17 @@
                         d="M34.0613 12.3756C33.9593 11.0379 33.8063 9.98449 33.5853 9.19859C33.1603 7.69367 32.1743 6.72384 30.6443 6.30581C28.8933 5.83761 24.4563 5.57007 17.3333 5.57007L14.6303 5.6704C12.7603 5.6704 10.7373 5.72056 8.52725 5.83761C6.28325 5.93794 4.82125 6.08843 4.02225 6.30581C2.49225 6.72384 1.50625 7.69367 1.08125 9.19859C0.605252 10.9209 0.333252 13.613 0.333252 17.275L0.435252 18.6796C0.435252 19.6829 0.486252 20.8366 0.605252 22.1743C0.707252 23.512 0.860252 24.5655 1.08125 25.3514C1.50625 26.8563 2.49225 27.8261 4.02225 28.2442C5.77325 28.7124 10.2103 28.9799 17.3333 28.9799L20.0363 28.8796C21.9063 28.8796 23.9293 28.8294 26.1393 28.7124C28.3833 28.612 29.8453 28.4615 30.6443 28.2442C32.1743 27.8261 33.1603 26.8563 33.5853 25.3514C34.0613 23.6291 34.3333 20.937 34.3333 17.275L34.2313 15.8704C34.2313 14.8671 34.1803 13.7133 34.0613 12.3756ZM22.7562 17.275L13.9332 22.2914V12.2586L22.7562 17.275Z" />
                     </svg>
                   </a>
-                  <a class="social-icon" href="https://cz.linkedin.com/company/filmagix" target="_blank">
-                    <svg width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                  <a
+                    class="social-icon"
+                    href="https://cz.linkedin.com/company/filmagix"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <svg
+                      aria-label="LinkedIn"
+                      width="34"
+                      height="34"
+                      viewBox="0 0 34 34"
+                      xmlns="http://www.w3.org/2000/svg">
                       <mask
                         id="mask0_555_4204"
                         style="mask-type: luminance"
@@ -199,7 +274,12 @@
             <p class="h3">Jsme na sociálních sítích</p>
             <div class="flex flex-row fa-center fj-center gap-8 flex-wrap">
               <a class="social-icon" href="https://www.facebook.com/FILMAGIX/" target="_blank">
-                <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  aria-label="Facebook"
+                  width="35"
+                  height="35"
+                  viewBox="0 0 35 35"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="currentColor"
                     fill-rule="evenodd"
@@ -208,7 +288,12 @@
                 </svg>
               </a>
               <a class="social-icon" href="https://www.instagram.com/filmagix_/?hl=cs" target="_blank">
-                <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  aria-label="Instagram"
+                  width="35"
+                  height="35"
+                  viewBox="0 0 35 35"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="currentColor"
                     fill-rule="evenodd"
@@ -217,7 +302,7 @@
                 </svg>
               </a>
               <a class="social-icon" href="https://www.youtube.com/c/FILMAGIXsro" target="_blank">
-                <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-label="Youtube" width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="currentColor"
                     fill-rule="evenodd"
@@ -226,7 +311,12 @@
                 </svg>
               </a>
               <a class="social-icon" href="https://cz.linkedin.com/company/filmagix" target="_blank">
-                <svg width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  aria-label="Linkedin"
+                  width="34"
+                  height="34"
+                  viewBox="0 0 34 34"
+                  xmlns="http://www.w3.org/2000/svg">
                   <mask
                     id="mask0_555_4204"
                     style="mask-type: luminance"
@@ -253,11 +343,12 @@
         <div class="divider"></div>
         <div class="text-center">
           © 2024 Filmagix s.r.o. | Všechna práva vyhrazena |
+          <!-- <a class="fc--text-body" href="./t&c.html">T&C</a> | -->
           <a class="fc--text-body" href="javascript:void()" type="button" data-cc="c-settings">Nastavení cookies</a>
         </div>
       </div>
     </footer>
-    <script src="./js/video-lazy-load.js"></script>
+    <script defer src="./js/video-lazy-load.js"></script>
     <script defer src="./js/number-counter.js"></script>
   </body>
 </html>

@@ -13,6 +13,43 @@
     <title>Filmagix s.r.o. - kreativní audiovizuální produkce</title>
     <!--- Preconnect--->
     <!-- Asynchronní JS (GA etc.) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-111362462-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-111362462-3');
+    </script>
+    <!--- Facebook Pixel -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '360132208045465');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=360132208045465&ev=PageView
+     &noscript=1" />
+    </noscript>
     <!--- @Import CSS --->
     <!--- Local CSS --->
     <base href="/dist/" />
@@ -51,7 +88,7 @@
           <a href="./index.html">
             <img class="nav-logo" src="./images/filmagix-logo.png" alt="Filmagix logo Logo" />
           </a>
-          <div class="menu-btn"><div class="menu-btn-burger"></div></div>
+          <div class="menu-btn" aria-label="Přepnout navigaci"><div class="menu-btn-burger"></div></div>
           <div class="nav-menu">
             <ul class="nav-menu-list">
               <li>
@@ -98,7 +135,7 @@
                 Jsme videokouzelníci - specialisté na příběhy s pořádnou dávkou fantazie. Rozesmáli jsme davy
                 nezapomenutelnými virálními projekty a posunuli hranice v reklamní tvorbě hlavně díky unikátní
                 technologii
-                <a href="https://www.webout.me/cs" target="_blank">Webout.</a>
+                <a href="https://www.webout.me/cs" target="_blank" rel="noopener noreferrer">Webout.</a>
               </p>
               <a href="./proc-my.html">Více o nás</a>
             </div>
@@ -285,7 +322,12 @@
             <p class="h3">Jsme na sociálních sítích</p>
             <div class="flex flex-row fa-center fj-center gap-8 flex-wrap">
               <a class="social-icon" href="https://www.facebook.com/FILMAGIX/" target="_blank">
-                <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  aria-label="Facebook"
+                  width="35"
+                  height="35"
+                  viewBox="0 0 35 35"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="currentColor"
                     fill-rule="evenodd"
@@ -294,7 +336,12 @@
                 </svg>
               </a>
               <a class="social-icon" href="https://www.instagram.com/filmagix_/?hl=cs" target="_blank">
-                <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  aria-label="Instagram"
+                  width="35"
+                  height="35"
+                  viewBox="0 0 35 35"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="currentColor"
                     fill-rule="evenodd"
@@ -303,7 +350,7 @@
                 </svg>
               </a>
               <a class="social-icon" href="https://www.youtube.com/c/FILMAGIXsro" target="_blank">
-                <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-label="Youtube" width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="currentColor"
                     fill-rule="evenodd"
@@ -312,7 +359,12 @@
                 </svg>
               </a>
               <a class="social-icon" href="https://cz.linkedin.com/company/filmagix" target="_blank">
-                <svg width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  aria-label="Linkedin"
+                  width="34"
+                  height="34"
+                  viewBox="0 0 34 34"
+                  xmlns="http://www.w3.org/2000/svg">
                   <mask
                     id="mask0_555_4204"
                     style="mask-type: luminance"
@@ -339,11 +391,12 @@
         <div class="divider"></div>
         <div class="text-center">
           © 2024 Filmagix s.r.o. | Všechna práva vyhrazena |
+          <!-- <a class="fc--text-body" href="./t&c.html">T&C</a> | -->
           <a class="fc--text-body" href="javascript:void()" type="button" data-cc="c-settings">Nastavení cookies</a>
         </div>
       </div>
     </footer>
-    <script src="./js/video-lazy-load.js"></script>
+    <script defer src="./js/video-lazy-load.js"></script>
     <script defer src="./js/number-counter.js"></script>
   </body>
 </html>

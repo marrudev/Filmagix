@@ -457,6 +457,9 @@ a:is(:hover, :focus) {
 .grid-even-col.col-4 {
   --grid-min-width: 260px;
 }
+.grid-even-col.col-5 {
+  --grid-min-width: 200px;
+}
 
 .grid-offer-cards {
   width: 100%;
@@ -6513,6 +6516,34 @@ ul:not(.nav-menu-list, .tabs-list) li::marker {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-bottom: 2.5rem;
+}
+
+.fondy-grid {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 1.5rem;
+  -webkit-column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
+.fondy-grid img {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 80px;
 }
 
 /* purgecss end ignore */

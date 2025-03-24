@@ -50,6 +50,10 @@
   &.col-4 {
     --grid-min-width: 260px;
   }
+
+  &.col-5 {
+    --grid-min-width: 200px;
+  }
 }
 
 .grid-offer-cards {

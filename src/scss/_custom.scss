@@ -192,4 +192,22 @@ ul:not(.nav-menu-list, .tabs-list) {
   margin-bottom: 2.5rem;
 }
 
+// Fondy EU
+
+.fondy-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 1.5rem;
+  column-gap: 1.5rem;
+
+  img {
+    width: max-content;
+    object-fit: contain;
+    max-height: 80px;
+  }
+}
+
 /* purgecss end ignore */

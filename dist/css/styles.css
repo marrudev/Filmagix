@@ -224,6 +224,10 @@ a:is(:hover, :focus) {
   font-weight: 600;
 }
 
+.fw-700 {
+  font-weight: 700;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1229,6 +1233,10 @@ section.padding-top-article {
   margin-top: 1rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -1441,4 +1449,32 @@ ul:not(.nav-menu-list, .tabs-list) li::marker {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-bottom: 2.5rem;
+}
+
+.fondy-grid {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 1.5rem;
+  -webkit-column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
+.fondy-grid img {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 80px;
 }

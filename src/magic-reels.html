@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    @@include('./components/head-1.html')
+    <title>Filmagix s.r.o. - Naše nabídka</title>
+    @@include('./components/head-2.html')
+    <!-- SEO, meta značky, ikony, Open Graph… -->
+    <meta
+      name="description"
+      content="Zaujměte davy, přitáhněte zákazníky, zvyšte prodeje. Hravě s videem od Filmagix." />
+    <meta name="keywords" content="" />
+    <meta property="og:title" itemprop="name" content="Filmagix s.r.o. - kreativní audiovizuální produkce" />
+    <meta property="og:url" content="" />
+    <meta
+      property="og:description"
+      itemprop="description"
+      content="Zaujměte davy, přitáhněte zákazníky, zvyšte prodeje. Hravě s videem od Filmagix." />
+    <meta property="og:image" content="./images/og-image.jpg" />
+    @@include('./components/fav.html')
+  </head>
+  <body>
+    @@include('./components/header.html')
+    <main>
+      <!---- Header ---->
+      <section class="padding-top-extra padding-bottom">
+        <div class="container">
+          <div class="page-header flex flex-row fa-end fj-between">
+            <div class="flex flex-col gap-4">
+              <h1>Magic reels</h1>
+              <p>
+                Dynamika, efektivita, sériovost, zájem…to je několik hlavních surovin pro recept na opravdu kvalitní
+                obsah sociálních sítí! Přejete si servírovat něco opravdu magicky chutného? Jste tu správně!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="./js/fslightbox.js"></script>
+      <!---- Postup ---->
+      <section class="padding-bottom">
+        <div class="container">
+          <div class="card">
+            <h2>Jaký je postup</h2>
+            <div class="flex flex-col gap-2 mb-6">
+              <p class="h4">1) Konzultace - kafíčkový brainstorming</p>
+              <p>
+                Sedneme si na kafe, probereme Vaše potřeby a vydefinujeme si, jak by Vaše video mělo vypadat.
+                Potřebujete oživit sociální sítě? Chytit divákovu pozornost hned v úvodu? Preferujete kratší stopáž a
+                více obsahu? To je náš šálek kávy! Doporučíme Vám to nejvhodnější řešení, jak Váš obsah odít do
+                atraktivního balení a nasbírat likes.
+              </p>
+            </div>
+            <div class="flex flex-col gap-2 mb-6">
+              <p class="h4">2) Vytváření scénáře</p>
+              <p>
+                Zapojíme mozkovny a navrhneme celou sérii krátkých magických videí a popíšeme Vám jejich hlavní funkci.
+                Krátkým scénářem, často doplněným o obrázkový storyboard Vám předáme jasnou představu, jak budou videa
+                vypadat a jaká vizuální kouzla použijeme.
+              </p>
+            </div>
+            <div class="flex flex-col gap-2 mb-6">
+              <p class="h4">3) Natáčení</p>
+              <p>
+                Zmobilizujeme kouzelnický natáčecí štáb, povoláme herce, najdeme lokace, zajistíme rekvizity, dopravu,
+                připravíme techniku a na závěr starým mayským tancem udobříme počasí, aby k nám bylo přívětivé. Pak hurá
+                na plac! A tak jako hudební dirigent my svou kozelnickou hůlkou řídíme celý štáb!
+              </p>
+            </div>
+            <div class="flex flex-col gap-2 mb-6">
+              <p class="h4">4) Postprodukce</p>
+              <p>
+                Záběry nahodíme do počítače a uděláme verzi střihu, kterou si od Vás necháme posvětit. Pak doladíme
+                animace a grafiku, vložíme kouzelnické triky, celé to krásně nabarvíme, nazvučíme, dodáme voiceover a
+                podladíme hudbou. Čáry máry a videa jsou hotova!
+              </p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="h4">5) Hurá do světa</p>
+              <p>
+                Vaše krátká videa plní sociální sítě a čarovně si podmaňují srdce diváků. Ale jakmile jsou jednou
+                vypuštěna, kouzlo nekončí. S napětím sledujeme reakce, sbíráme všechny stopy a zpětnou vazbu, abychom
+                příště vytvořili ještě silnější magii. A samozřejmě už v našem tajném kouzelnickém kruhu plánujeme další
+                společné kafe - kouzelný lektvar! ☺
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---- Další nabídka ---->
+      <section>
+        <div class="container">
+          <h2>Naše další nabídka</h2>
+          <div class="grid-even-col col-3">
+            @@include('./components/card-personalizovana-reklama.html')
+            @@include('./components/card-hrana-reklama.html') @@include('./components/card-animovana-reklama.html')
+          </div>
+        </div>
+      </section>
+      @@include('./components/cta-section.html')
+    </main>
+    @@include('./components/footer.html') @@include('./components/scripts.html')
+  </body>
+</html>

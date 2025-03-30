@@ -43,49 +43,77 @@
             <a
               class="card-featured-work-thumb"
               data-fslightbox="featured"
-              href="https://www.youtube.com/watch?v=BXURjA4ABVA">
-              <img src="./images/thumbnails/hyundai.jpg" alt="Video thumbnail" />
+              href="https://www.youtube.com/watch?v=FQfZyELA5jM&embeds_referring_euri=https%3A%2F%2Ffilmagix.com%2F">
+              <img src="./images/thumbnails/mapei.jpg" alt="Video thumbnail" />
             </a>
             <div class="card-featured-content flex flex-col fa-start fj-center gap-4">
-              <img class="" src="./images/clients/hyundai-logo.png" alt="Logo klienta" />
+              <img class="" src="./images/portfolio/mapei.png" alt="Logo klienta" />
               <p>
-                I my jsme přidali svůj díl do skládačky nové marketingové strategie Hyundai. Povedlo se? Posuďte sami.
+                Potenciál online světa je třeba využít. Klientům a partnerům Mapei jsme animovanými explainery pomohli
+                do něj nahlédnout.
               </p>
-              <a class="button" href="./pripadove-studie/hyundai.html">Zobrazit studii</a>
+              <a class="button" href="./pripadove-studie/mapei.html">Zobrazit studii</a>
             </div>
           </div>
           <div class="grid-even-col col-4 even-gap-4">
             <a
               class="card-portfolio flex flex-col"
-              data-fslightbox="vybrano-pro-vas"
-              href="https://www.youtube.com/watch?v=BXURjA4ABVA">
+              data-fslightbox="animace"
+              href="https://www.youtube.com/watch?v=CDS0TWCqnZo">
               <div class="card-portfolio-head">
-                <img src="./images/thumbnails/eet-terminator.jpeg" alt="Video thumbnail" />
+                <picture>
+                  <source srcset="./images/thumbnails/kontent_ai.webp" type="image/webp" />
+                  <source srcset="./images/thumbnails/kontent_ai.jpg" type="image/jpg" />
+                  <img src="./images/thumbnails/kontent_ai.jpg" alt="Video thumbnail" loading="lazy" />
+                </picture>
               </div>
               <div class="card-portfolio-footer flex flex-col">
-                <img src="./images/clients/hyundai-logo.png" alt="Logo klienta" />
+                <img src="./images/portfolio/kontent.png" alt="Logo klienta" />
               </div>
             </a>
             <a
               class="card-portfolio flex flex-col"
-              data-fslightbox="vybrano-pro-vas"
-              href="https://www.youtube.com/watch?v=BXURjA4ABVA">
+              data-fslightbox="animace"
+              href="https://www.youtube.com/watch?v=GSxyE9Os70c">
               <div class="card-portfolio-head">
-                <img src="./images/thumbnails/eet-terminator.jpeg" alt="Video thumbnail" />
+                <picture>
+                  <source srcset="./images/thumbnails/radegast.webp" type="image/webp" />
+                  <source srcset="./images/thumbnails/radegast.jpg" type="image/jpg" />
+                  <img src="./images/thumbnails/radegast.jpg" alt="Video thumbnail" loading="lazy" />
+                </picture>
               </div>
               <div class="card-portfolio-footer flex flex-col">
-                <img src="./images/clients/mapei-logo.png" alt="Logo klienta" />
+                <p class="h5">Radegast</p>
               </div>
             </a>
             <a
               class="card-portfolio flex flex-col"
-              data-fslightbox="vybrano-pro-vas"
-              href="https://www.youtube.com/watch?v=BXURjA4ABVA">
+              data-fslightbox="animace"
+              href="https://www.youtube.com/watch?v=_5vBJLPN_qM">
               <div class="card-portfolio-head">
-                <img src="./images/thumbnails/eet-terminator.jpeg" alt="Video thumbnail" />
+                <picture>
+                  <source srcset="./images/thumbnails/dating.webp" type="image/webp" />
+                  <source srcset="./images/thumbnails/dating.jpg" type="image/jpg" />
+                  <img src="./images/thumbnails/dating.jpg" alt="Video thumbnail" loading="lazy" />
+                </picture>
               </div>
               <div class="card-portfolio-footer flex flex-col">
-                <img src="./images/clients/akka-logo.png" alt="Logo klienta" />
+                <p class="h5">REAL FEEL</p>
+              </div>
+            </a>
+            <a
+              class="card-portfolio flex flex-col"
+              data-fslightbox="animace"
+              href="https://www.youtube.com/watch?v=R5M3udRYm4c">
+              <div class="card-portfolio-head">
+                <picture>
+                  <source srcset="./images/thumbnails/kontent.webp" type="image/webp" />
+                  <source srcset="./images/thumbnails/kontent.jpg" type="image/jpg" />
+                  <img src="./images/thumbnails/kontent.jpg" alt="Video thumbnail" loading="lazy" />
+                </picture>
+              </div>
+              <div class="card-portfolio-footer flex flex-col">
+                <img src="./images/portfolio/kontent.png" alt="Logo klienta" />
               </div>
             </a>
           </div>
@@ -136,9 +164,9 @@
       <section>
         <div class="container">
           <h2>Naše další nabídka</h2>
-          <div class="grid-even-col col-2 even-gap-6">
+          <div class="grid-even-col col-3">
             @@include('./components/card-personalizovana-reklama.html')
-            @@include('./components/card-hrana-reklama.html')
+            @@include('./components/card-hrana-reklama.html') @@include('./components/card-magic-reels.html')
           </div>
         </div>
       </section>

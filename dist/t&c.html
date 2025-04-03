@@ -13,36 +13,10 @@
     <title>Filmagix s.r.o. - Proč my</title>
     <!--- Preconnect--->
     <!-- Asynchronní JS (GA etc.) -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-111362462-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'UA-111362462-3');
-    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111362462-3"></script>
+    <script async src="./js/ga.js"></script>
     <!--- Facebook Pixel -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '360132208045465');
-      fbq('track', 'PageView');
-    </script>
+    <script async src="./js/facebook-pixel.js"></script>
     <noscript>
       <img
         height="1"
@@ -51,6 +25,7 @@
      &noscript=1" />
     </noscript>
     <!--- @Import CSS --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--- Local CSS --->
     <base href="/dist/" />
     <link rel="stylesheet" href="./css/cookieconsent.css" />
@@ -140,8 +115,8 @@
         <div class="footer-cols flex flex-row flex-wrap">
           <div class="flex flex-col gap-4 fa-center text-center">
             <p class="h3">Filmagix s.r.o</p>
-            <p>Praha|Brno</p>
-            <p>DIČ: CZ07961987</p>
+            <p>Praha | Brno</p>
+            <p>IČO: 07961987</p>
           </div>
           <div class="flex flex-col gap-4 fa-center text-center">
             <p class="h3">Kontakt</p>

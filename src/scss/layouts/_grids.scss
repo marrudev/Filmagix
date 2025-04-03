@@ -28,9 +28,10 @@
   }
 
   &.col-2-homepage {
-    --grid-min-width: 400px;
+    --grid-min-width: 460px;
     row-gap: 1.5rem;
     column-gap: 5rem;
+    place-items: center;
   }
 
   &.col-2-form {
@@ -71,8 +72,26 @@
   }
 }
 
+.grid-our-story-videos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+  }
+}
+
 .grid-prace-v-cislech {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 478px) {
+    grid-template-columns: 1fr;
+  }
 }

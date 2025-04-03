@@ -215,4 +215,13 @@ ul:not(.nav-menu-list, .tabs-list) {
   }
 }
 
+// Other
+
+.our-story-total-views {
+  @media (max-width: 400px) {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
 /* purgecss end ignore */

@@ -13,36 +13,10 @@
     <title>Filmagix s.r.o. - kreativní audiovizuální produkce</title>
     <!--- Preconnect--->
     <!-- Asynchronní JS (GA etc.) -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-111362462-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'UA-111362462-3');
-    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111362462-3"></script>
+    <script async src="./js/ga.js"></script>
     <!--- Facebook Pixel -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '360132208045465');
-      fbq('track', 'PageView');
-    </script>
+    <script async src="./js/facebook-pixel.js"></script>
     <noscript>
       <img
         height="1"
@@ -51,6 +25,7 @@
      &noscript=1" />
     </noscript>
     <!--- @Import CSS --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--- Local CSS --->
     <base href="/dist/" />
     <link rel="stylesheet" href="./css/cookieconsent.css" />
@@ -134,26 +109,26 @@
         </div>
       </section>
       <!---- Naše práce v číslech ---->
-      <section class="padding-both">
+      <section class="padding-top">
         <div class="container">
           <h2>Naše práce v číslech</h2>
           <div class="grid-prace-v-cislech">
-            <div class="card card-prace-v-cislech flex flex-col fa-center fj-center">
+            <div class="card card-prace-v-cislech flex flex-col fa-center">
               <img class="hero-client-logo mb-6" src="./images/clients/sparta.webp" alt="" />
               <p class="h3 fc--accent mb-2">4x</p>
               <p>vyšší proklikovost v emailu</p>
             </div>
-            <div class="card card-prace-v-cislech flex flex-col fa-center fj-center">
+            <div class="card card-prace-v-cislech flex flex-col fa-center">
               <img class="hero-client-logo mb-6" src="./images/clients/sparta.webp" alt="" />
               <p class="h3 fc--accent mb-2">90%</p>
               <p>dokoukatelnost videa</p>
             </div>
-            <div class="card card-prace-v-cislech flex flex-col fa-center fj-center">
+            <div class="card card-prace-v-cislech flex flex-col fa-center">
               <img class="hero-client-logo mb-6" src="./images/clients/sparta.webp" alt="" />
               <p class="h3 fc--accent mb-2">200%</p>
               <p>ROI</p>
             </div>
-            <div class="card card-prace-v-cislech flex flex-col fa-center fj-center">
+            <div class="card card-prace-v-cislech flex flex-col fa-center">
               <img class="hero-client-logo mb-6" src="./images/clients/sparta.webp" alt="" />
               <p class="h3 fc--accent mb-2">2.mil</p>
               <p>organického sdílení</p>
@@ -168,20 +143,70 @@
             <div class="flex flex-col fj-center">
               <h2 class="mb-4">Náš příběh</h2>
               <p class="mb-6">
-                Jsme videokouzelníci - specialisté na příběhy s pořádnou dávkou fantazie. Rozesmáli jsme davy
-                nezapomenutelnými virálními projekty a posunuli hranice v reklamní tvorbě hlavně díky unikátní
-                technologii
+                Jsme videokouzelníci - speciálisté na audiovizi s pořádnou dávkou fantazie a humoru. Rozesmáli jsme davy
+                nezapomenutelnými virálními projekty. (zde proklik do sekce virální videa). Harry Potter bojuje proti
+                Miloši Zemanovi? Terminátor Arnošt zachraňuje Bohuša z Dědictví? Sám doma ztracen v Praze? To nejsou
+                scifi výmysly, ale naše autorská tvorba. Naše kouzlo tkví v umění propojit nemožné a tak čarujeme v
+                oblasti marketingu. Limity? Ty hravě posunujeme i v reklamní tvorbě hlavně díky unikátní technologii
                 <a href="https://www.webout.me/cs" target="_blank" rel="noopener noreferrer">Webout.</a>
               </p>
               <a href="./proc-my.html">Více o nás</a>
+              <div class="our-story-total-views flex flex-row fa-center fj-start gap-2 mt-10">
+                <p class="fc--white">Přes</p>
+                <p class="h1 fc--accent number-counter">30 000 000</p>
+                <p class="fc--white">zhlédnutí</p>
+              </div>
+              <!-- <p class="mt-10"><span class="h1 fc--accent number-counter">30 000 000</span> zhlédnutí</p> -->
             </div>
-            <div class="flex flex-col fa-center fj-center">
-              <video class="w-full mb-4" autoplay loop muted playsinline>
-                <source src="./videos/hp-viral.webm" type="video/webm" />
-                <source src="./videos/hp-viral.mp4" type="video/mp4;" />
-              </video>
-              <p class="h3 number-counter">7 500 000</p>
-              <p>Zhlédnutí</p>
+            <div class="grid-our-story-videos">
+              <a
+                class="card-portfolio flex flex-col"
+                data-fslightbox="viraly"
+                href="https://www.youtube.com/watch?v=qGrJtGM6MDo">
+                <div class="card-portfolio-head">
+                  <picture>
+                    <source srcset="./images/viraly/harry_potter.webp" type="image/webp" />
+                    <source srcset="./images/viraly/harry_potter.jpg" type="image/jpg" />
+                    <img src="./images/viraly/harry_potter.jpg" alt="Video thumbnail" loading="lazy" />
+                  </picture>
+                </div>
+              </a>
+              <a
+                class="card-portfolio flex flex-col"
+                data-fslightbox="viraly"
+                href="https://www.youtube.com/watch?v=4ojIw3khTHw">
+                <div class="card-portfolio-head">
+                  <picture>
+                    <source srcset="./images/viraly/eeterminator.webp" type="image/webp" />
+                    <source srcset="./images/viraly/eeterminator.jpg" type="image/jpg" />
+                    <img src="./images/viraly/eeterminator.jpg" alt="Video thumbnail" loading="lazy" />
+                  </picture>
+                </div>
+              </a>
+              <a
+                class="card-portfolio flex flex-col"
+                data-fslightbox="viraly"
+                href="https://www.youtube.com/watch?v=saf0PLtkuyg">
+                <div class="card-portfolio-head">
+                  <picture>
+                    <source srcset="./images/viraly/sam_doma.webp" type="image/webp" />
+                    <source srcset="./images/viraly/sam_doma.jpg" type="image/jpg" />
+                    <img src="./images/viraly/sam_doma.jpg" alt="Video thumbnail" loading="lazy" />
+                  </picture>
+                </div>
+              </a>
+              <a
+                class="card-portfolio flex flex-col"
+                data-fslightbox="viraly"
+                href="https://www.youtube.com/watch?v=BXURjA4ABVA">
+                <div class="card-portfolio-head">
+                  <picture>
+                    <source srcset="./images/viraly/james_bond.webp" type="image/webp" />
+                    <source srcset="./images/viraly/james_bond.jpg" type="image/jpg" />
+                    <img src="./images/viraly/james_bond.jpg" alt="Video thumbnail" loading="lazy" />
+                  </picture>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -260,6 +285,7 @@
       <section>
         <div class="container">
           <h2>Nejnovější práce</h2>
+          <!-- Case study -->
           <div class="card-featured-work mb-10">
             <a
               class="card-featured-work-thumb"
@@ -279,59 +305,244 @@
               <a class="button" href="./pripadova-studie/hyundai.html">Zobrazit studii</a>
             </div>
           </div>
-          <div class="grid-even-col col-4 even-gap-4 mb-4">
-            <a class="card-portfolio flex flex-col" href="https://www.genacs.cz/" target="_blank">
-              <div class="card-portfolio-head">
-                <picture>
-                  <source srcset="./images/thumbnails/sparta.webp" type="image/webp" />
-                  <source srcset="./images/thumbnails/sparta.jpg" type="image/jpg" />
-                  <img src="./images/thumbnails/sparta.jpg" alt="Video thumbnail" loading="lazy" />
-                </picture>
+          <!-- Swiper -->
+          <div class="swiper swiper-featured-work">
+            <div class="swiper-wrapper mb-4">
+              <div class="swiper-slide">
+                <a class="card-portfolio flex flex-col" href="https://www.genacs.cz/" target="_blank">
+                  <div class="card-portfolio-head">
+                    <picture>
+                      <source srcset="./images/thumbnails/sparta.webp" type="image/webp" />
+                      <source srcset="./images/thumbnails/sparta.jpg" type="image/jpg" />
+                      <img src="./images/thumbnails/sparta.jpg" alt="Video thumbnail" loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="card-portfolio-footer flex flex-col">
+                    <img src="./images/portfolio/sparta-text-logo.png" alt="Logo klienta" />
+                  </div>
+                </a>
               </div>
-              <div class="card-portfolio-footer flex flex-col">
-                <img src="./images/portfolio/sparta.png" alt="Logo klienta" />
+              <div class="swiper-slide">
+                <a class="card-portfolio flex flex-col" href="https://www.zahrajsivzoo.cz/cs" target="_blank">
+                  <div class="card-portfolio-head">
+                    <picture>
+                      <source srcset="./images/thumbnails/prima.webp" type="image/webp" />
+                      <source srcset="./images/thumbnails/prima.jpg" type="image/jpg" />
+                      <img src="./images/thumbnails/prima.jpg" alt="Video thumbnail" loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="card-portfolio-footer flex flex-col">
+                    <img src="./images/portfolio/prima.png" alt="Logo klienta" />
+                  </div>
+                </a>
               </div>
-            </a>
-            <a class="card-portfolio flex flex-col" href="https://www.zahrajsivzoo.cz/cs" target="_blank">
-              <div class="card-portfolio-head">
-                <picture>
-                  <source srcset="./images/thumbnails/prima.webp" type="image/webp" />
-                  <source srcset="./images/thumbnails/prima.jpg" type="image/jpg" />
-                  <img src="./images/thumbnails/prima.jpg" alt="Video thumbnail" loading="lazy" />
-                </picture>
+              <div class="swiper-slide">
+                <a class="card-portfolio flex flex-col" href="https://klip.ewafarna.com/cs" target="_blank">
+                  <div class="card-portfolio-head">
+                    <picture>
+                      <source srcset="./images/thumbnails/eva_farna.webp" type="image/webp" />
+                      <source srcset="./images/thumbnails/eva_farna.jpg" type="image/jpg" />
+                      <img src="./images/thumbnails/eva_farna.jpg" alt="Video thumbnail" loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="card-portfolio-footer flex flex-col">
+                    <img src="./images/portfolio/ewafarna.webp" alt="Logo klienta" />
+                  </div>
+                </a>
               </div>
-              <div class="card-portfolio-footer flex flex-col">
-                <img src="./images/portfolio/prima.png" alt="Logo klienta" />
+              <div class="swiper-slide">
+                <a
+                  class="card-portfolio flex flex-col"
+                  data-fslightbox="vybrano-pro-vas"
+                  href="https://www.youtube.com/watch?v=-29Qed4pmCc">
+                  <div class="card-portfolio-head">
+                    <picture>
+                      <source srcset="./images/thumbnails/martina_sablikova.webp" type="image/webp" />
+                      <source srcset="./images/thumbnails/martina_sablikova.jpg" type="image/jpg" />
+                      <img src="./images/thumbnails/martina_sablikova.jpg" alt="Video thumbnail" loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="card-portfolio-footer flex flex-col">
+                    <img src="./images/portfolio/czechtourism.png" alt="Logo klienta" />
+                  </div>
+                </a>
               </div>
-            </a>
-            <a class="card-portfolio flex flex-col" href="https://klip.ewafarna.com/cs" target="_blank">
-              <div class="card-portfolio-head">
-                <picture>
-                  <source srcset="./images/thumbnails/eva_farna.webp" type="image/webp" />
-                  <source srcset="./images/thumbnails/eva_farna.jpg" type="image/jpg" />
-                  <img src="./images/thumbnails/eva_farna.jpg" alt="Video thumbnail" loading="lazy" />
-                </picture>
+              <div class="swiper-slide">
+                <a
+                  class="card-portfolio flex flex-col"
+                  data-fslightbox="vybrano-pro-vas"
+                  href="https://www.youtube.com/watch?v=BypA2PrHFz0">
+                  <div class="card-portfolio-head">
+                    <picture>
+                      <source srcset="./images/thumbnails/petr_cech.webp" type="image/webp" />
+                      <source srcset="./images/thumbnails/petr_cech.jpg" type="image/jpg" />
+                      <img src="./images/thumbnails/petr_cech.jpg" alt="Video thumbnail" loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="card-portfolio-footer flex flex-col">
+                    <img src="./images/portfolio/czechtourism.png" alt="Logo klienta" />
+                  </div>
+                </a>
               </div>
-              <div class="card-portfolio-footer flex flex-col">
-                <p class="h5">Eva Farná</p>
+              <div class="swiper-slide">
+                <a
+                  class="card-portfolio flex flex-col"
+                  data-fslightbox="vybrano-pro-vas"
+                  href="https://www.youtube.com/watch?v=GInpKO6klMc">
+                  <div class="card-portfolio-head">
+                    <picture>
+                      <source srcset="./images/thumbnails/aifp.webp" type="image/webp" />
+                      <source srcset="./images/thumbnails/aifp.jpg" type="image/jpg" />
+                      <img src="./images/thumbnails/aifp.jpg" alt="Video thumbnail" loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="card-portfolio-footer flex flex-col">
+                    <p class="h5">AIFP</p>
+                  </div>
+                </a>
               </div>
-            </a>
-            <a
-              class="card-portfolio flex flex-col"
-              data-fslightbox="vybrano-pro-vas"
-              href="https://www.youtube.com/watch?v=-29Qed4pmCc">
-              <div class="card-portfolio-head">
-                <picture>
-                  <source srcset="./images/thumbnails/martina_sablikova.webp" type="image/webp" />
-                  <source srcset="./images/thumbnails/martina_sablikova.jpg" type="image/jpg" />
-                  <img src="./images/thumbnails/martina_sablikova.jpg" alt="Video thumbnail" loading="lazy" />
-                </picture>
+              <div class="swiper-slide">
+                <a
+                  class="card-portfolio flex flex-col"
+                  data-fslightbox="vybrano-pro-vas"
+                  href="https://www.youtube.com/watch?v=24nGbLjRBl0">
+                  <div class="card-portfolio-head">
+                    <picture>
+                      <source srcset="./images/thumbnails/marketing_festival.webp" type="image/webp" />
+                      <source srcset="./images/thumbnails/marketing_festival.jpg" type="image/jpg" />
+                      <img src="./images/thumbnails/marketing_festival.jpg" alt="Video thumbnail" loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="card-portfolio-footer flex flex-col">
+                    <img src="./images/portfolio/marketingfestival.png" alt="Logo klienta" />
+                  </div>
+                </a>
               </div>
-              <div class="card-portfolio-footer flex flex-col">
-                <img src="./images/portfolio/kudyznudy.png" alt="Logo klienta" />
+              <div class="swiper-slide">
+                <a
+                  class="card-portfolio flex flex-col"
+                  data-fslightbox="vybrano-pro-vas"
+                  href="https://www.youtube.com/watch?v=ZYsSi6dOsHs">
+                  <div class="card-portfolio-head">
+                    <picture>
+                      <source srcset="./images/thumbnails/telly_2.webp" type="image/webp" />
+                      <source srcset="./images/thumbnails/telly_2.jpg" type="image/jpg" />
+                      <img src="./images/thumbnails/telly_2.jpg" alt="Video thumbnail" loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="card-portfolio-footer flex flex-col">
+                    <img src="./images/portfolio/telly.png" alt="Logo klienta" />
+                  </div>
+                </a>
               </div>
-            </a>
+              <div class="swiper-slide">
+                <a
+                  class="card-portfolio flex flex-col"
+                  data-fslightbox="vybrano-pro-vas"
+                  href="https://www.youtube.com/watch?v=SyDhEP90r3s">
+                  <div class="card-portfolio-head">
+                    <picture>
+                      <source srcset="./images/thumbnails/uber.webp" type="image/webp" />
+                      <source srcset="./images/thumbnails/uber.jpg" type="image/jpg" />
+                      <img src="./images/thumbnails/uber.jpg" alt="Video thumbnail" loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="card-portfolio-footer flex flex-col">
+                    <img src="./images/portfolio/uber.png" alt="Logo klienta" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="card-portfolio flex flex-col"
+                  data-fslightbox="firemni-videa"
+                  href="https://www.youtube.com/watch?v=ah7oHn8d-RE">
+                  <div class="card-portfolio-head">
+                    <picture>
+                      <source srcset="./images/thumbnails/vut_budoucnost.webp" type="image/webp" />
+                      <source srcset="./images/thumbnails/vut_budoucnost.jpg" type="image/jpg" />
+                      <img src="./images/thumbnails/vut_budoucnost.jpg" alt="Video thumbnail" loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="card-portfolio-footer flex flex-col">
+                    <img src="./images/portfolio/vut.png" alt="Logo klienta" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="card-portfolio flex flex-col"
+                  data-fslightbox="trikova-videa"
+                  href="https://www.youtube.com/watch?v=wLBRN9mBZj8&embeds_widget_referrer=https%3A%2F">
+                  <div class="card-portfolio-head">
+                    <picture>
+                      <source srcset="./images/thumbnails/vivantis.webp" type="image/webp" />
+                      <source srcset="./images/thumbnails/vivantis.jpg" type="image/jpg" />
+                      <img src="./images/thumbnails/vivantis.jpg" alt="Video thumbnail" loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="card-portfolio-footer flex flex-col">
+                    <img src="./images/portfolio/vivantis.png" alt="Logo klienta" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="card-portfolio flex flex-col"
+                  data-fslightbox="vybrano-pro-vas"
+                  href="https://www.youtube.com/watch?v=XF-PV7aAn-4">
+                  <div class="card-portfolio-head">
+                    <picture>
+                      <source srcset="./images/thumbnails/desitka.webp" type="image/webp" />
+                      <source srcset="./images/thumbnails/desitka.jpg" type="image/jpg" />
+                      <img src="./images/thumbnails/desitka.jpg" alt="Video thumbnail" loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="card-portfolio-footer flex flex-col">
+                    <p class="h5">Filmagix - Desítka</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="card-portfolio flex flex-col"
+                  data-fslightbox="vybrano-pro-vas"
+                  href="https://www.youtube.com/watch?v=-WbVm8O5Tjk">
+                  <div class="card-portfolio-head">
+                    <picture>
+                      <source srcset="./images/thumbnails/hollandia.webp" type="image/webp" />
+                      <source srcset="./images/thumbnails/hollandia.jpg" type="image/jpg" />
+                      <img src="./images/thumbnails/hollandia.jpg" alt="Video thumbnail" loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="card-portfolio-footer flex flex-col">
+                    <img src="./images/portfolio/hollandia.png" alt="Logo klienta" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="card-portfolio flex flex-col"
+                  data-fslightbox="trikova-videa"
+                  href="https://www.youtube.com/watch?v=rs3MzxhPXUY">
+                  <div class="card-portfolio-head">
+                    <picture>
+                      <source srcset="./images/thumbnails/hyundai_1.webp" type="image/webp" />
+                      <source srcset="./images/thumbnails/hyundai_1.jpg" type="image/jpg" />
+                      <img src="./images/thumbnails/hyundai_1.jpg" alt="Video thumbnail" loading="lazy" />
+                    </picture>
+                  </div>
+                  <div class="card-portfolio-footer flex flex-col">
+                    <img src="./images/portfolio/hyundai.png" alt="Logo klienta" />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script src="./js/swiper-featured-work.js"></script>
           <div class="flex fa-center fj-center"><a class="button" href="./portfolio.html">Zobrazit portfolio</a></div>
         </div>
       </section>
@@ -357,8 +568,8 @@
         <div class="footer-cols flex flex-row flex-wrap">
           <div class="flex flex-col gap-4 fa-center text-center">
             <p class="h3">Filmagix s.r.o</p>
-            <p>Praha|Brno</p>
-            <p>DIČ: CZ07961987</p>
+            <p>Praha | Brno</p>
+            <p>IČO: 07961987</p>
           </div>
           <div class="flex flex-col gap-4 fa-center text-center">
             <p class="h3">Kontakt</p>

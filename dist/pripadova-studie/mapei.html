@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="cs">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,47 +10,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
 
-    <title>Filmagix s.r.o. - Naše nabídka</title>
+    <title>Filmagix s.r.o. - Mapei</title>
     <!--- Preconnect--->
     <!-- Asynchronní JS (GA etc.) -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-111362462-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'UA-111362462-3');
-    </script>
-    <!--- Facebook Pixel -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '360132208045465');
-      fbq('track', 'PageView');
-    </script>
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        src="https://www.facebook.com/tr?id=360132208045465&ev=PageView
-     &noscript=1" />
-    </noscript>
     <!--- @Import CSS --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--- Local CSS --->
     <base href="/dist/" />
     <link rel="stylesheet" href="./css/cookieconsent.css" />
@@ -110,147 +74,154 @@
 
     <main>
       <!---- Header ---->
-      <section class="padding-top-extra padding-bottom">
+      <section class="padding-top-article padding-bottom">
         <div class="container">
-          <div class="page-header flex flex-row fa-end fj-between">
-            <div class="flex flex-col gap-4">
-              <h1>Případové studie</h1>
+          <!-- Swiper -->
+          <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <iframe
+                  class="youtube-iframe"
+                  src="https://www.youtube.com/embed/FQfZyELA5jM?si=WuYXtp-xJkEGvSLa"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="swiper-slide">
+                <iframe
+                  class="youtube-iframe"
+                  src="https://www.youtube.com/embed/ht96u3XhzVY?si=qs4vHKjUjYv1cq-z"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="article-header flex flex-col fa-start gap-6">
+            <img class="client-logo" src="./images/clients/mapei-logo.png" alt="Logo klienta" />
+            <h1>Mapei - Případová studie</h1>
+          </div>
+          <div class="divider"></div>
+        </div>
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="./js/swiper-article.js"></script>
+      <!---- Content ---->
+      <section class="padding-bottom">
+        <div class="container article">
+          <div class="article">
+            <h2>Na začátek trocha kontextu</h2>
+            <h3>O klientovi</h3>
+            <p>
+              Společnost Mapei vznikla roku 1937 v Miláně jako malý rodinný podnik a postupně se vypracovala do pozice
+              světového lídra v oboru chemických výrobků a lepicích tmelů pro stavebnictví. Svým zákazníkům nabízí
+              komplexní nabídku produktů z vysoce kvalitních surovin, které se vyznačují zejména svojí stálostí a
+              spolehlivostí.
+            </p>
+            <h3>Kvalita všeho druhu</h3>
+            <p>
+              Kvalita produktů je však pouze jedním z pilířů strategie firmy. Společnost Mapei si je vědoma, že nákupem
+              produktu zákazníkova cesta nekončí a že je potřeba ke kvalitnímu produktu přidat neméně kvalitní
+              zákaznickou zkušenost a zákaznický servis. Neustále rostoucí komplexita nabízeného sortimentu by pro
+              tradiční komunikační kanály mohla představovat problém, Mapei ho však řeší elegantním, a zároveň tím
+              nejlogičtějším řešením – přesunem do online světa. Spuštěním vlastní mobilní aplikace tak poskytuje Mapei
+              online školení, tutoriály, novinky ohledně sortimentu a obecné novinky z oboru, které jejich zákazníkům
+              usnadňují orientaci v nabídce a ve výsledku také práci.
+            </p>
+            <h2>Z dílny k obrazovce</h2>
+            <p>
+              Jistě není tajemstvím, že sektor stavebnictví se řadí spíše mezi konzervativnější obory, alespoň co se
+              přístupu k využívání nových technologií týče. Mapei se však tuto realitu snaží změnit. Sériemi školení v
+              rámci své Promotour se firma snaží řemeslníkům a svým B2B partnerům ukázat, jaký potenciál se v online
+              prostředí skrývá. A že je radno jej využít.
+            </p>
+            <div class="grid-even-col col-3">
+              <img src="./images/pripadove-studie/mapei/mapei-photo1.jpeg" alt="" />
+              <img src="./images/pripadove-studie/mapei/mapei-photo2.jpeg" alt="" />
+            </div>
+            <h3>V tom rádi přiložíme ruku k dílu</h3>
+            <p>
+              Dohodli jsme se s Mapei na tvorbě dvou animovaných videí, určených pro promítání na výše zmíněné
+              Promotour. První video mělo sloužit jako intro, které má zaujmout a poukázat na potenciál moderního
+              digitálního světa. Zároveň bylo nutné zaujmout diváky v prvních vteřinách a naladit je na téma celého
+              školení. Druhé video pak funguje jako explainer, tzn. popisuje postup, užití a výhody aplikace Mapei v
+              mobilním telefonu.
+            </p>
+            <h3>Animujeme</h3>
+            <p>
+              Při animaci jsme spolupracovali tandemově s externími animátory, abychom byli schopni klientovi dodat
+              výsledek v co nejkratším čase. První, úvodní video jsme animovali interně ve Filmagix, o zpracování
+              druhého videa se pak pod naším vedením paralelně starali externí animátoři.
+            </p>
+            <p>
+              Proces vypadal následovně. Hlavní animátor vytvořil ústřední postavu figurující v obou videích. Tu bylo
+              třeba modelovat tak, aby byla atraktivní pro cílovou skupinu. Volba proto, poněkud přirozeně, padla na
+              sympatického, ve firemních barvách oděného řemeslníka ve středních letech s mohutným knírem, který by mu
+              záviděl i Burt Reynolds. Řemeslníka jsme následně vsadili do navrženého pozadí a podle obrázkového scénáře
+              doanimovali zbývající záběry. První verzi videa jsme zaslali klientovi ke schválení. Po jeho schválení
+              jsme se mohli vrhnout finalizaci animací a vyplnění videa grafickými detaily.
+            </p>
+            <div class="grid-even-col col-3">
+              <img src="./images/pripadove-studie/mapei/mapei-photo3.jpeg" alt="" />
+              <video class="video-lazy-load" autoplay="" loop="" muted="" playsinline="" preload="none">
+                <source src="./videos/pripadove-studie/mapei/mapei001.mp4" type="video/mp4" />
+                <source src="./videos/pripadove-studie/mapei/mapei001.webm" type="video/webm" />
+              </video>
+            </div>
+            <p>
+              Ihned po schválení animované verze prvního videa jsme zároveň našim externím kolegům zadali úkoly spojené
+              s tvorbou videa druhého. Bylo třeba nahrát displeje aplikace Mapei a stejně jako u videa prvního
+              doanimovat grafiku a zapracovat detaily. Co se týče hudebního podkladu a zvuků, na přání klienta jsme
+              zvolili hudbu veselou a dynamickou.
+            </p>
+            <p>
+              Celá dokončovací fáze obecně proběhla rychle a bez zádrhelů. Pro úvodní video byly ještě zpracovány dva
+              typy konců. Jeden s logem uprostřed a druhý bez loga. A bylo hotovo. Klient byl s výsledkem velmi spokojen
+              a nás hřál dobrý pocit s kvalitně odvedené práce
+            </p>
+            <video class="video-lazy-load" autoplay="" loop="" muted="" playsinline="" preload="none">
+              <source src="./videos/pripadove-studie/mapei/mapei002.mp4" type="video/mp4" />
+              <source src="./videos/pripadove-studie/mapei/mapei002.webm" type="video/webm" />
+            </video>
+            <h2>Sebereflexe</h2>
+            <p>
+              Buďme upřímní. Není nad to pracovat s animovanými herci! Na plac nechodí pozdě ani s kocovinou, dají si
+              říct, když se nám na jejich výkonech něco nelíbí a nemají přemrštěné nároky na honorář ani na doprovodný
+              catering.
+            </p>
+            <p>
+              Obecně je tvorba animovaných videí relativně rychlá a zábavná. Vyplácí se mít kvalitní storyboard a
+              vícekrokový schvalovací proces, který zamezí situacím, kdy se na videu udělá kus práce směrem, který však
+              nesplňuje klientova očekávání.
+            </p>
+            <p>
+              V neposlední řadě jsme si vyzkoušeli spolupráci s externími animátory. Ačkoli se může zdát, že spolupráce
+              dvou různých entit s odlišnými návyky a pracovním stylem budou generovat třecí plochy, nám se takováto
+              kolaborace osvědčila. Vzhledem k jasně definované hierarchii v týmu nedocházelo k žádným problémům.
+              Externí animátoři pracovali přesně podle našich pokynů a odvedli rychlou a zároveň kvalitní práci. Bez
+              potíží jsme dodrželi jednotný vizuální styl a navíc jsme se vzájemně doplnili a obohatili.
+            </p>
+            <h2>Co o naší práci řekl zákazník?</h2>
+            <div class="flex flex-col gap-4 article-card">
+              <p class="h3">Tomáš Foltas</p>
+              <p class="fc--white">Senior Project Manager - BETTER MARKETING, s.r.o.</p>
               <p>
-                Text k animované reklamě Lorem ipsum je označení pro standardní pseudolatinský text užívaný v grafickém
-                designu a navrhování jako demonstrativní výplňový text při vytváření pracovních ukázek grafických
-                návrhů. Lipsum t
+                “Společnost FILMAGIX je v rámci své tvorby vždy inovativní, profesionální a velmi kreativní. Výsledné
+                produkty vždy reflektovaly naše požadavky a kladně mohu ohodnotit také lidský přístup všech členů týmu a
+                včasné dodržování termínů. FILMAGIX proto mohu jednoznačně doporučit.”
               </p>
             </div>
           </div>
         </div>
       </section>
-      <!---- Případové studie ---->
-      <section>
-        <div class="container">
-          <div class="card-pripadova-studie mb-10">
-            <video class="card-pripadova-studie-thumb" autoplay="" loop="" muted="" playsinline="">
-              <source src="./videos/pripadove-studie-thumbs/vut.mp4" type="video/mp4;" />
-              <source src="./videos/pripadove-studie-thumbs/vut.webm" type="video/webm" />
-            </video>
-            <div class="card-pripadova-studie-content flex flex-col fa-start fj-center gap-4">
-              <img class="" src="./images/clients/vut-logo.png" alt="Logo klienta" />
-              <p>
-                Naše náborové video, interaktivní hra a web pro VUT zápasí o srdce studentů i piedestal v populární
-                soutěži vysokých škol.
-              </p>
-              <a class="button mt-4" href="./pripadova-studie/hrdina-vut.html">Zobrazit studii</a>
-            </div>
-          </div>
-          <div class="card-pripadova-studie mb-10">
-            <video class="card-pripadova-studie-thumb" autoplay="" loop="" muted="" playsinline="">
-              <source src="./videos/pripadove-studie-thumbs/vivantis.mp4" type="video/mp4;" />
-              <source src="./videos/pripadove-studie-thumbs/vivantis.webm" type="video/webm" />
-            </video>
-            <div class="card-pripadova-studie-content flex flex-col fa-start fj-center gap-4">
-              <img class="" src="./images/clients/vivantis-logo.png" alt="Logo klienta" />
-              <p>
-                Odlišně. Atraktivně. Neokoukaně. Společnost Vivantis potřebovala vpustit do své reklamy svěží vítr, tak
-                jsme jim pomohli otevřít okna dokořán.
-              </p>
-              <a class="button mt-4" href="./pripadova-studie/vivantis.html">Zobrazit studii</a>
-            </div>
-          </div>
-          <div class="card-pripadova-studie mb-10">
-            <video class="card-pripadova-studie-thumb" autoplay="" loop="" muted="" playsinline="">
-              <source src="./videos/pripadove-studie-thumbs/eeterminator.mp4" type="video/mp4;" />
-              <source src="./videos/pripadove-studie-thumbs/eeterminator.webm" type="video/webm" />
-            </video>
-            <div class="card-pripadova-studie-content flex flex-col fa-start fj-center gap-4">
-              <p class="h3">Eeterminátor</p>
-              <p>
-                Den vyúčtování nadešel. Kdo jej přečkal bez újmy a kdo naopak skončil na smetišti dějin? Nahlédněte za
-                oponu našeho nejnovějšího virálního videa.
-              </p>
-              <a class="button mt-4" href="./pripadova-studie/eeterminator.html">Zobrazit studii</a>
-            </div>
-          </div>
-          <div class="card-pripadova-studie mb-10">
-            <video class="card-pripadova-studie-thumb" autoplay="" loop="" muted="" playsinline="">
-              <source src="./videos/pripadove-studie-thumbs/hyundai.mp4" type="video/mp4;" />
-              <source src="./videos/pripadove-studie-thumbs/hyundai.webm" type="video/webm" />
-            </video>
-            <div class="card-pripadova-studie-content flex flex-col fa-start fj-center gap-4">
-              <img class="" src="./images/clients/hyundai-logo.png" alt="Logo klienta" />
-              <p>
-                I my jsme přidali svůj díl do skládačky nové marketingové strategie Hyundai. Povedlo se? Posuďte sami.
-              </p>
-              <a class="button mt-4" href="./pripadova-studie/hyundai.html">Zobrazit studii</a>
-            </div>
-          </div>
-          <div class="card-pripadova-studie mb-10">
-            <video class="card-pripadova-studie-thumb" autoplay="" loop="" muted="" playsinline="">
-              <source src="./videos/pripadove-studie-thumbs/akka.mp4" type="video/mp4;" />
-              <source src="./videos/pripadove-studie-thumbs/akka.webm" type="video/webm" />
-            </video>
-            <div class="card-pripadova-studie-content flex flex-col fa-start fj-center gap-4">
-              <img class="" src="./images/clients/akka-logo.png" alt="Logo klienta" />
-              <p>
-                Sháníme IT specialisty pro mezinárodní firmu AKKA, která dělá projekty budoucnosti. Scifi žánr byl pro
-                nás tedy ten pravý. Podívejte se, jak jsme se s kampaní poprali.
-              </p>
-              <a class="button mt-4" href="./pripadova-studie/akka.html">Zobrazit studii</a>
-            </div>
-          </div>
-          <div class="card-pripadova-studie mb-10">
-            <img src="./videos/pripadove-studie-thumbs/viraly.jpg" alt="" />
-            <div class="card-pripadova-studie-content flex flex-col fa-start fj-center gap-4">
-              <p class="h3">Proč děláme virály</p>
-              <p>
-                Den vyúčtování nadešel. Kdo jej přečkal bez újmy a kdo naopak skončil na smetišti dějin? Nahlédněte za
-                oponu našeho nejnovějšího virálního videa.
-              </p>
-              <a class="button mt-4" href="./pripadove-studie/proc-delame-viraly.html">Zobrazit studii</a>
-            </div>
-          </div>
-          <div class="card-pripadova-studie mb-10">
-            <video class="card-pripadova-studie-thumb" autoplay="" loop="" muted="" playsinline="">
-              <source src="./videos/pripadove-studie-thumbs/mapei.mp4" type="video/mp4;" />
-              <source src="./videos/pripadove-studie-thumbs/mapei.webm" type="video/webm" />
-            </video>
-            <div class="card-pripadova-studie-content flex flex-col fa-start fj-center gap-4">
-              <img class="" src="./images/clients/mapei-logo.png" alt="Logo klienta" />
-              <p>
-                Potenciál online světa je třeba využít. Klientům a partnerům Mapei jsme animovanými explainery pomohli
-                do něj nahlédnout.
-              </p>
-              <a class="button mt-4" href="./pripadova-studie/mapei.html">Zobrazit studii</a>
-            </div>
-          </div>
-          <div class="card-pripadova-studie mb-10">
-            <video class="card-pripadova-studie-thumb" autoplay="" loop="" muted="" playsinline="">
-              <source src="./videos/pripadove-studie-thumbs/kentico.mp4" type="video/mp4;" />
-              <source src="./videos/pripadove-studie-thumbs/kentico.webm" type="video/webm" />
-            </video>
-            <div class="card-pripadova-studie-content flex flex-col fa-start fj-center gap-4">
-              <img class="" src="./images/clients/kentico-logo.png" alt="Logo klienta" />
-              <p>
-                Kentico je skvělá firma. Sami jsme se o tom mohli přesvědčit. Naše náborová videa vás nepochybně
-                přesvědčí o tom samém.
-              </p>
-              <a class="button mt-4" href="./pripadova-studie/kentico.html">Zobrazit studii</a>
-            </div>
-          </div>
-          <div class="card-pripadova-studie">
-            <video class="card-pripadova-studie-thumb" autoplay="" loop="" muted="" playsinline="">
-              <source src="./videos/pripadove-studie-thumbs/kentico-darek.mp4" type="video/mp4;" />
-              <source src="./videos/pripadove-studie-thumbs/kentico-darek.webm" type="video/webm" />
-            </video>
-            <div class="card-pripadova-studie-content flex flex-col fa-start fj-center gap-4">
-              <img class="" src="./images/clients/kentico-logo.png" alt="Logo klienta" />
-              <p>
-                Zakladatel a současný šéf firmy Petr Palas dostal neobvyklý dárek, a to třídenní voucher zvaný “Zažij
-                svou firmu”.
-              </p>
-              <a class="button mt-4" href="./pripadova-studie/kentico-darek.html">Zobrazit studii</a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <script src="./js/fslightbox.js"></script>
       <!---- CTA ---->
       <section class="padding-both">
         <div class="container">
@@ -265,6 +236,8 @@
           </div>
         </div>
       </section>
+      <script defer src="./js/video-lazy-load.js"></script>
+      <script defer src="./js/number-counter.js"></script>
     </main>
     <!---- Footer ---->
     <footer>
@@ -359,7 +332,5 @@
         </div>
       </div>
     </footer>
-    <script defer src="./js/video-lazy-load.js"></script>
-    <script defer src="./js/number-counter.js"></script>
   </body>
 </html>

@@ -476,6 +476,12 @@ a:is(:hover, :focus) {
   }
 }
 
+.grid-prace-v-cislech {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
 .table-w {
   width: 100%;
   overflow: auto;
@@ -1398,6 +1404,10 @@ article a:has(img),
   .card-pripadova-studie {
     grid-template-columns: 1fr;
   }
+}
+
+.card-prace-v-cislech {
+  border-radius: 2.5rem;
 }
 
 /* purgecss end ignore */

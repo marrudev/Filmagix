@@ -312,6 +312,12 @@ a:is(:hover, :focus) {
     grid-column: auto;
   }
 }
+
+.grid-prace-v-cislech {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
 .button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1101,6 +1107,10 @@ article a:has(img),
     grid-template-columns: 1fr;
   }
 }
+
+.card-prace-v-cislech {
+  border-radius: 2.5rem;
+}
 .container {
   --container-max-width: 1400px;
   width: 100%;
@@ -1264,6 +1274,10 @@ section.padding-top-article {
 
 .mb-0 {
   margin-bottom: 0;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mb-4 {

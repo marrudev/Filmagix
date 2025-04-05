@@ -1274,13 +1274,13 @@ section.padding-top {
 section.padding-bottom {
   padding-bottom: clamp(4rem, 1.0833rem + 9.3333vw, 7.5rem);
 }
-.section.padding-top-extra,
-section.padding-top-extra {
-  padding-top: calc(clamp(4rem, 1.0833rem + 9.3333vw, 7.5rem) * 2);
-}
 .section.padding-top-article,
 section.padding-top-article {
   padding-top: calc(clamp(4rem, 1.0833rem + 9.3333vw, 7.5rem) * 0.5);
+}
+.section.padding-header,
+section.padding-header {
+  padding-top: clamp(5rem, -1rem + 16vw, 10rem);
 }
 
 .relative {
@@ -1347,8 +1347,9 @@ body {
 }
 
 .section-hero {
-  min-height: 80dvh;
+  min-height: 80vh;
   padding: clamp(2.5rem, 0.625rem + 6vw, 4rem) 0;
+  padding-top: min(clamp(2.5rem, 0.625rem + 6vw, 4rem), 160px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1399,7 +1400,7 @@ body {
 }
 
 .hero-client-logo {
-  max-height: 48px;
+  max-height: clamp(2rem, 0.8rem + 3.2vw, 3rem);
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1559,4 +1560,10 @@ ul:not(.nav-menu-list, .tabs-list) li::marker {
             flex-direction: column;
     gap: 0;
   }
+}
+
+.prace-v-cislech-icon {
+  height: 3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }

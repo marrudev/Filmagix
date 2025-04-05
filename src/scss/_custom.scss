@@ -22,8 +22,9 @@ body {
 }
 
 .section-hero {
-  min-height: 80dvh;
+  min-height: 80vh;
   padding: clamp(2.5rem, 0.625rem + 6vw, 4rem) 0;
+  padding-top: min(clamp(2.5rem, 0.625rem + 6vw, 4rem), 160px);
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -80,7 +81,7 @@ body {
 }
 
 .hero-client-logo {
-  max-height: 48px;
+  max-height: clamp(2rem, 0.8rem + 3.2vw, 3rem);
   object-fit: contain;
 }
 
@@ -222,6 +223,11 @@ ul:not(.nav-menu-list, .tabs-list) {
     flex-direction: column;
     gap: 0;
   }
+}
+
+.prace-v-cislech-icon {
+  height: 3rem;
+  object-fit: contain;
 }
 
 /* purgecss end ignore */

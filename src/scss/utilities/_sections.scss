@@ -33,4 +33,8 @@ section {
   &.padding-bottom-half {
     padding-bottom: calc(#{$padding-section} / 2);
   }
+
+  &.padding-header {
+    padding-top: $padding-section-header;
+  }
 }

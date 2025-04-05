@@ -1349,7 +1349,7 @@ body {
 .section-hero {
   min-height: 80vh;
   padding: clamp(2.5rem, 0.625rem + 6vw, 4rem) 0;
-  padding-top: min(clamp(2.5rem, 0.625rem + 6vw, 4rem), 160px);
+  padding-top: max(clamp(2.5rem, 0.625rem + 6vw, 4rem), 160px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

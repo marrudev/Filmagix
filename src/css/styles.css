@@ -1277,6 +1277,12 @@ article a:has(img),
   width: 100%;
 }
 .card-portfolio .card-portfolio-footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 1rem;
   color: white;
   font-weight: 600;
@@ -1378,7 +1384,9 @@ article a:has(img),
   padding: clamp(1.5rem, 0.6667rem + 2.6667vw, 2.5rem);
 }
 .card-featured-work .card-featured-content img {
-  max-height: 2.5rem;
+  max-height: 4rem;
+  height: 100%;
+  max-width: 100%;
   margin-bottom: 1rem;
   -o-object-fit: contain;
      object-fit: contain;
@@ -1417,7 +1425,7 @@ article a:has(img),
   padding: clamp(1.5rem, 0.6667rem + 2.6667vw, 2.5rem);
 }
 .card-pripadova-studie .card-pripadova-studie-content img {
-  max-height: 2.5rem;
+  max-height: 3rem;
   margin-bottom: 1rem;
   -o-object-fit: contain;
      object-fit: contain;

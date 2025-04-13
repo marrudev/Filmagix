@@ -29,7 +29,7 @@
     <!--- @Import CSS --->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--- Local CSS --->
-    <base href="/" />
+    <base href="/dist/" />
     <link rel="stylesheet" href="./css/cookieconsent.css?v=1.2" />
     <link rel="stylesheet" href="./css/styles.css?v=1.2" />
     <link href="./font/stylesheet.css" rel="stylesheet" type="text/css" />
@@ -93,7 +93,7 @@
             <div class="flex flex-col gap-4"></div>
           </div>
           <div class="grid-even-col col-2-form">
-            <form class="form" action="https://www.formbackend.com/f/45a24769adedd170" method="POST">
+            <form class="form" action="https://formcarry.com/s/2f-xvr1IbPo" method="POST">
               <h1 class="h3">Chcete se na něco zeptat? Napiště nám</h1>
               <div class="flex flex-col gap-6">
                 <div class="form-item flex flex-col">
@@ -101,8 +101,8 @@
                   <input type="text" name="jmeno" required placeholder="Vaše jméno" />
                 </div>
                 <div class="form-item flex flex-col">
-                  <label for="email">Kontaktní e-mail</label>
-                  <input type="email" name="email" placeholder="Váš kontaktní e-mail" />
+                  <label for="email">Kontaktní e-mail <span class="fc--accent">*</span></label>
+                  <input type="email" name="email" required placeholder="Váš kontaktní e-mail" />
                 </div>
                 <div class="form-item flex flex-col">
                   <label for="telefon">Kontaktní telefon</label>
@@ -113,9 +113,9 @@
                   <div class="select">
                     <select id="tema" name="tema">
                       <option value="" disabled selected>Vyberte téma</option>
-                      <option value="ceska-republika">Personalizované video</option>
-                      <option value="slovenska-republika">Hraná reklama</option>
-                      <option value="slovenska-republika">Animovaná reklama</option>
+                      <option value="Personalizované video">Personalizované video</option>
+                      <option value="Hraná reklama">Hraná reklama</option>
+                      <option value="Animovaná reklama">Animovaná reklama</option>
                     </select>
                   </div>
                 </div>

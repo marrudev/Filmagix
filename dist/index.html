@@ -29,7 +29,7 @@
     <!--- @Import CSS --->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--- Local CSS --->
-    <base href="/" />
+    <base href="/dist/" />
     <link rel="stylesheet" href="./css/cookieconsent.css?v=1.2" />
     <link rel="stylesheet" href="./css/styles.css?v=1.2" />
     <link href="./font/stylesheet.css" rel="stylesheet" type="text/css" />
@@ -102,6 +102,7 @@
           </div>
           <div class="flex flex-row fa-center fj-start gap-x-10 gap-y-6 flex-wrap mt-20">
             <img class="hero-client-logo" src="./images/portfolio/sparta-text-logo.png" alt="Logo Sparta Praha" />
+            <img class="hero-client-logo" src="./images/portfolio/ceska-sporitelna.png" alt="Logo Česká spořitelna" />
             <img class="hero-client-logo" src="./images/portfolio/regiojet.png" alt="Logo Regiojet" />
             <img class="hero-client-logo" src="./images/portfolio/hyundai.png" alt="Logo Hyundai" />
             <img class="hero-client-logo" src="./images/clients/ewafarna.webp" alt="Logo Ewa Farna" />
@@ -289,19 +290,20 @@
           <h2>Nejnovější práce</h2>
           <!-- Case study -->
           <div class="card-featured-work mb-10">
-            <a class="card-featured-work-thumb" href="https://www.youtube.com/watch?v=0BM0h2usk4E" target="_blank">
-              <picture>
-                <source srcset="./images/thumbnails/sparta_cs.webp" type="image/webp" />
-                <source srcset="./images/thumbnails/sparta_cs.jpeg" type="image/jpeg" />
-                <img src="./images/thumbnails/sparta_cs.jpg" alt="Video thumbnail" loading="lazy" />
-              </picture>
+            <a
+              class="card-portfolio flex flex-col"
+              data-fslightbox="sparta_cs"
+              href="https://www.youtube.com/watch?v=0BM0h2usk4E">
+              <div class="card-portfolio-head">
+                <picture>
+                  <source srcset="./images/thumbnails/sparta_cs.webp" type="image/webp" />
+                  <source srcset="./images/thumbnails/sparta_cs.jpeg" type="image/jpeg" />
+                  <img src="./images/thumbnails/sparta_cs.jpg" alt="Video thumbnail" loading="lazy" />
+                </picture>
+              </div>
             </a>
             <div class="card-featured-content flex flex-col fa-start fj-center gap-4">
               <img class="" src="./images/portfolio/sparta-text-logo.png" alt="Logo klienta" />
-              <!--  <p>
-                I my jsme přidali svůj díl do skládačky nové marketingové strategie Hyundai. Povedlo se? Posuďte sami.
-              </p> -->
-
               <div class="flex flex-row flex-wrap gap-4">
                 <a class="button" href="https://www.webout.me/cs/modal/sparta" target="_blank">Vyzkoušet video</a>
                 <a class="button" href="https://www.youtube.com/watch?v=0BM0h2usk4E" target="_blank">Přehrát studii</a>

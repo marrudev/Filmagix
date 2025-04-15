@@ -1390,6 +1390,8 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
   z-index: -1;
 }
 

@@ -22,7 +22,7 @@ body {
 }
 
 .section-hero {
-  min-height: 80vh;
+  min-height: calc(100vh - 72px);
   padding: clamp(2.5rem, 0.625rem + 6vw, 4rem) 0;
   padding-top: max(clamp(2.5rem, 0.625rem + 6vw, 4rem), 160px);
   display: flex;
